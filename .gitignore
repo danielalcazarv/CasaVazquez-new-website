@@ -1,7 +1,2 @@
 # Ignora la carpeta node_modules
 node_modules
-#json
-package-lock.json
-package.json
-#borrador
-scss/borrador.scss

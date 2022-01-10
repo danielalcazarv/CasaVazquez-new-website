@@ -23,118 +23,116 @@
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <div class="body-grid">
-        <header class="body-grid-hijoA">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent container-layout p-1">
-                <a class="navbar-brand" href="../index.html">
-                <!--Logotipo-->
-                    <img src="../imagenes/logo-casavazquez.webp" width="300px" alt="logo-casavazquez">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav__link--color" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav__link--color" href="../pages/servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav__link--color" href="../pages/quienes-somos.html">Quienes Somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav__link--color" href="../pages/zonas.html">Zonas de Trabajo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold" id="nav__link--color" href="../pages/solicitar-presupuestos.html">Solicitar Presupuesto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav__link--color" href="../pages/contacto.html">Contacto</a>
-                        </li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent container-layout p-1">
+            <a class="navbar-brand" href="../index.html">
+            <!--Logotipo-->
+                <img src="../imagenes/logo-casavazquez.webp" width="300px" alt="logo-casavazquez">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav__link--color" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav__link--color" href="../pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav__link--color" href="../pages/quienes-somos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav__link--color" href="../pages/zonas.html">Zonas de Trabajo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" id="nav__link--color" href="../pages/solicitar-presupuestos.html">Solicitar Presupuesto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav__link--color" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>                
+    </header>
+    <!--Main-->
+    <main>
+        <div class="container-layout">
+            <h2>Solicita tu presupuesto a medida</h2>
+        </div>
+        <div class="container-layout">
+            <h3>Completa el siguiente formulario para solicitar un presupuesto a la medida de tus necesidades. También podes comunicarte con nuestros operadores al 15 5555 5554</h3>
+        </div>
+        <div>
+            <fieldset>
+                    <form class="form" action="" method="get">
+                        <label for="nombrecliente">Nombre y apellido (obligatorio)</label>
+                            <input class="field" type="text" name="nombrecliente" placeholder="Ingrese su nombre" id="nombrecliente">
+                        <label for="mailcliente">E-mail (obligatorio)</label>
+                            <input class="field" type="email" name="mailcliente" placeholder="nombre@ejemplo.com" id="mailcliente">
+                        <label for="telcliente">Teléfono (obligatorio)</label>
+                            <input class="field" type="number" name="telcliente"  placeholder="Ingrese su número" id="telcliente">
+                        <label for="trabajocliente">Tipo de Trabajo</label>
+                            <ul> 
+                                <li>Plomería <input class="field" type="checkbox" name="trabajocliente" id="trabajocliente"></li>
+                                <li>Gas <input class="field" type="checkbox" name="trabajocliente" id="trabajocliente"></li>
+                                <li>Limpieza de Tanques <input class="field" type="checkbox" name="trabajocliente" id="trabajocliente"></li>
+                                <li>Bombas <input class="field" type="checkbox" name="trabajocliente" id="trabajocliente"></li>
+                            </ul>
+                        <label for="descripcliente">Descripción del Trabajo</label>
+                            <textarea class="field" name="descripcliente" id="descripcliente" cols="40" rows="10"></textarea>
+                        <input type="submit" class=" field btn btnColor" value="Enviar">
+                    </form>
+            </fieldset>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer class="w-100 py-4 flex-shrink-0 border-top border-dark">
+        <div class="container container-layout">
+            <div class="row gy-4">
+                <!--Nav del footer-->
+                <div class="col">
+                    <h5 class="mb-3"><strong>MENÚ</strong></h5>
+                    <ul class="list-unstyled">
+                        <li><a class="footLink" href="../index.html">INICIO</a></li>
+                        <li><a class="footLink" href="../pages/servicios.html">SERVICIOS</a></li>
+                        <li><a class="footLink" href="../pages/quienes-somos.html">QUIENES SOMOS</a></li>
+                        <li><a class="footLink" href="../pages/zonas.html">ZONAS DE TRABAJO</a></li>
+                        <li><a class="footLink" href="../pages/solicitar-presupuestos.html">SOLICITAR PRESUPUESTO</a></li>
+                        <li><a class="footLink" href="../pages/contacto.html">CONTACTO</a></li>
                     </ul>
                 </div>
-            </nav>                
-        </header>
-        <!--Main-->
-        <main class="body-grid-hijoB">
-            <div class="container-layout">
-                <h2>Solicita tu presupuesto a medida</h2>
+                <!--Redes-->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-3"><strong>REDES</strong></h5>
+                    <a href="https://wa.me/5491125958968?text=Deseo%20recibir%20información%20sobre..." target="_blank">
+                        <img class="footerLogos" src="../imagenes/logo-whatsapp.webp" alt="whatsapp">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="footerLogos" src="../imagenes/logo-ig.webp" alt="instagram">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="footerLogos" src="../imagenes/logo-facebook.webp" alt="facebook">
+                    </a>
+                </div>
+                <!--Newsletter-->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-3"><strong>SUSCRIBETE</strong></h5>
+                    <p class="small">Ingresa tu correo electrónico para recibir información sobre nuestros servicios y ofertas.</p>
+                    <form action="" method="get">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="nombre@ejemplo.com" aria-label="email" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-dark" type="button" id="button-addon2">Enviar</button>
+                        </div>
+                </div>
             </div>
-            <div class="container-layout">
-                <h3>Completa el siguiente formulario para solicitar un presupuesto a la medida de tus necesidades. También podes comunicarte con nuestros operadores al 15 5555 5554</h3>
-            </div>
+            <!--Copyright-->
             <div>
-                <fieldset>
-                        <form class="form" action="" method="get">
-                            <label for="nombrecliente">Nombre y apellido (obligatorio)</label>
-                                <input class="field" type="text" name="nombrecliente" placeholder="Ingrese su nombre" id="nombrecliente">
-                            <label for="mailcliente">E-mail (obligatorio)</label>
-                                <input class="field" type="email" name="mailcliente" placeholder="nombre@ejemplo.com" id="mailcliente">
-                            <label for="telcliente">Teléfono (obligatorio)</label>
-                                <input class="field" type="number" name="telcliente"  placeholder="Ingrese su número" id="telcliente">
-                            <label for="trabajocliente">Tipo de Trabajo</label>
-                                <ul> 
-                                    <li>Plomería <input class="field" type="checkbox" name="trabajocliente" id="trabajocliente"></li>
-                                    <li>Gas <input class="field" type="checkbox" name="trabajocliente" id="trabajocliente"></li>
-                                    <li>Limpieza de Tanques <input class="field" type="checkbox" name="trabajocliente" id="trabajocliente"></li>
-                                    <li>Bombas <input class="field" type="checkbox" name="trabajocliente" id="trabajocliente"></li>
-                                </ul>
-                            <label for="descripcliente">Descripción del Trabajo</label>
-                                <textarea class="field" name="descripcliente" id="descripcliente" cols="40" rows="10"></textarea>
-                            <input type="submit" class=" field btn btnColor" value="Enviar">
-                        </form>
-                </fieldset>
+                <p class="text text-center mb-0">© Daniel Alcázar 2021 Todos los Derechos Reservados</p>
             </div>
-        </main>
-        <!--Footer-->
-        <footer class="body-grid-hijoC w-100 py-4 flex-shrink-0 border-top border-dark">
-            <div class="container container-layout">
-                <div class="row gy-4">
-                    <!--Nav del footer-->
-                    <div class="col">
-                        <h5 class="mb-3"><strong>MENÚ</strong></h5>
-                        <ul class="list-unstyled">
-                            <li><a class="footLink" href="../index.html">INICIO</a></li>
-                            <li><a class="footLink" href="../pages/servicios.html">SERVICIOS</a></li>
-                            <li><a class="footLink" href="../pages/quienes-somos.html">QUIENES SOMOS</a></li>
-                            <li><a class="footLink" href="../pages/zonas.html">ZONAS DE TRABAJO</a></li>
-                            <li><a class="footLink" href="../pages/solicitar-presupuestos.html">SOLICITAR PRESUPUESTO</a></li>
-                            <li><a class="footLink" href="../pages/contacto.html">CONTACTO</a></li>
-                        </ul>
-                    </div>
-                    <!--Redes-->
-                    <div class="col-lg-4 col-md-6">
-                        <h5 class="mb-3"><strong>REDES</strong></h5>
-                        <a href="https://wa.me/5491125958968?text=Deseo%20recibir%20información%20sobre..." target="_blank">
-                            <img class="footerLogos" src="../imagenes/logo-whatsapp.webp" alt="whatsapp">
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <img class="footerLogos" src="../imagenes/logo-ig.webp" alt="instagram">
-                        </a>
-                        <a href="https://www.facebook.com/" target="_blank">
-                            <img class="footerLogos" src="../imagenes/logo-facebook.webp" alt="facebook">
-                        </a>
-                    </div>
-                    <!--Newsletter-->
-                    <div class="col-lg-4 col-md-6">
-                        <h5 class="mb-3"><strong>SUSCRIBETE</strong></h5>
-                        <p class="small">Ingresa tu correo electrónico para recibir información sobre nuestros servicios y ofertas.</p>
-                        <form action="" method="get">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="nombre@ejemplo.com" aria-label="email" aria-describedby="button-addon2">
-                                <button class="btn btn-outline-dark" type="button" id="button-addon2">Enviar</button>
-                            </div>
-                    </div>
-                </div>
-                <!--Copyright-->
-                <div>
-                    <p class="text text-center mb-0">© Daniel Alcázar 2021 Todos los Derechos Reservados</p>
-                </div>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <!--Bootstrap js-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

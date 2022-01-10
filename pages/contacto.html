@@ -23,130 +23,128 @@
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <div class="body-grid">
-        <header class="body-grid-hijoA">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent container-layout p-1">
-                <a class="navbar-brand" href="../index.html">
-                <!--Logotipo-->
-                    <img src="../imagenes/logo-casavazquez.webp" width="300px" alt="logo-casavazquez">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav__link--color" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav__link--color" href="../pages/servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav__link--color" href="../pages/quienes-somos.html">Quienes Somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav__link--color" href="../pages/zonas.html">Zonas de Trabajo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav__link--color" href="../pages/solicitar-presupuestos.html">Solicitar Presupuesto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold" id="nav__link--color" href="../pages/contacto.html">Contacto</a>
-                        </li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent container-layout p-1">
+            <a class="navbar-brand" href="../index.html">
+            <!--Logotipo-->
+                <img src="../imagenes/logo-casavazquez.webp" width="300px" alt="logo-casavazquez">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav__link--color" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav__link--color" href="../pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav__link--color" href="../pages/quienes-somos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav__link--color" href="../pages/zonas.html">Zonas de Trabajo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav__link--color" href="../pages/solicitar-presupuestos.html">Solicitar Presupuesto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" id="nav__link--color" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>                
+    </header>
+    <!--Main-->
+    <main>
+        <div class="container-layout">
+            <h2>Contáctanos</h2>
+        </div>
+        <div class="container-layout">
+            <h3>15 5555 5554 - de Lunes a Viernes de 9 a 18hs  y sábados de 9 a 13hs.</h3>
+            <h3>15 5555 5555 - Atención Urgencias las 24HS</h3>
+            <h3><a href="mailto:info@casavazquez.com.ar">info@casavazquez.com.ar</a></h3>
+            <h3>Déjanos un mensaje por WhatsApp haciéndo click aquí</h3>
+            <h3>Estamos en Av. Díaz Vélez 3735 - CABA</h3> <!--ATENCIÓN:agregar link whatsapp web-->
+        </div>
+        <div class="container-layout mapBox animate__animated animate__fadeInUpBig">
+            <iframe class="container-layout mapZonas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8320715245595!2d-58.421397884841895!3d-34.608407665253075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca5fd93f82ef%3A0x148d5253e297238e!2sCasa%20V%C3%A1zquez!5e0!3m2!1ses-419!2sar!4v1636580212137!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="container-layout">
+            <h2>Consultas y Sugerencias</h2>
+        </div>
+        <div>
+            <fieldset>
+                <form class="form" action="" method="get">
+                    <label for="nombrecliente">Nombre y apellido (obligatorio)</label>
+                        <input class="field" type="text" name="nombrecliente" placeholder="Ingrese su nombre" id="nombrecliente">
+                    <label for="mailcliente">E-mail (obligatorio)</label>
+                        <input class="field" type="email" name="mailcliente" placeholder="nombre@ejemplo.com" id="mailcliente">
+                    <label for="telcliente">Teléfono (obligatorio)</label>
+                        <input class="field" type="number" name="telcliente"  placeholder="Ingrese su número" id="telcliente">
+                    <label for="comenttype">Tema</label>
+                        <select name="comenttype" id="comenttype">
+                            <option value="A">Plomería</option>
+                            <option value="B">Gas</option>
+                            <option value="C">Limpieza de Tanques</option>
+                            <option value="D">Bombas</option>
+                            <option value="E">Reclamo</option>
+                            <option value="F">Sugerencia</option>
+                        </select>
+                    <label for="comentcliente">Comentarios</label>
+                        <textarea class="field" name="comentcliente" id="comentcliente" cols="40" rows="10"></textarea>
+                    <input type="submit" class="field btn btnColor" value="Enviar">
+                </form>
+            </fieldset>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer class="w-100 py-4 flex-shrink-0 border-top border-dark">
+        <div class="container container-layout">
+            <div class="row gy-4">
+                <!--Nav del footer-->
+                <div class="col">
+                    <h5 class="mb-3"><strong>MENÚ</strong></h5>
+                    <ul class="list-unstyled">
+                        <li><a class="footLink" href="../index.html">INICIO</a></li>
+                        <li><a class="footLink" href="../pages/servicios.html">SERVICIOS</a></li>
+                        <li><a class="footLink" href="../pages/quienes-somos.html">QUIENES SOMOS</a></li>
+                        <li><a class="footLink" href="../pages/zonas.html">ZONAS DE TRABAJO</a></li>
+                        <li><a class="footLink" href="../pages/solicitar-presupuestos.html">SOLICITAR PRESUPUESTO</a></li>
+                        <li><a class="footLink" href="../pages/contacto.html">CONTACTO</a></li>
                     </ul>
                 </div>
-            </nav>                
-        </header>
-        <!--Main-->
-        <main class="body-grid-hijoB">
-            <div class="container-layout">
-                <h2>Contáctanos</h2>
+                <!--Redes-->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-3"><strong>REDES</strong></h5>
+                    <a href="https://wa.me/5491125958968?text=Deseo%20recibir%20información%20sobre..." target="_blank">
+                        <img class="footerLogos" src="../imagenes/logo-whatsapp.webp" alt="whatsapp">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="footerLogos" src="../imagenes/logo-ig.webp" alt="instagram">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="footerLogos" src="../imagenes/logo-facebook.webp" alt="facebook">
+                    </a>
+                </div>
+                <!--Newsletter-->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-3"><strong>SUSCRIBETE</strong></h5>
+                    <p class="small">Ingresa tu correo electrónico para recibir información sobre nuestros servicios y ofertas.</p>
+                    <form class="suscribe" action="" method="get">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="nombre@ejemplo.com" aria-label="email" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-dark" type="button" id="button-addon2">Enviar</button>
+                        </div>
+                </div>
             </div>
-            <div class="container-layout">
-                <h3>15 5555 5554 - de Lunes a Viernes de 9 a 18hs  y sábados de 9 a 13hs.</h3>
-                <h3>15 5555 5555 - Atención Urgencias las 24HS</h3>
-                <h3><a href="mailto:info@casavazquez.com.ar">info@casavazquez.com.ar</a></h3>
-                <h3>Déjanos un mensaje por WhatsApp haciéndo click aquí</h3>
-                <h3>Estamos en Av. Díaz Vélez 3735 - CABA</h3> <!--ATENCIÓN:agregar link whatsapp web-->
-            </div>
-            <div class="container-layout mapBox animate__animated animate__fadeInUpBig">
-                <iframe class="container-layout mapZonas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8320715245595!2d-58.421397884841895!3d-34.608407665253075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca5fd93f82ef%3A0x148d5253e297238e!2sCasa%20V%C3%A1zquez!5e0!3m2!1ses-419!2sar!4v1636580212137!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="container-layout">
-                <h2>Consultas y Sugerencias</h2>
-            </div>
+            <!--Copyright-->
             <div>
-                <fieldset>
-                    <form class="form" action="" method="get">
-                        <label for="nombrecliente">Nombre y apellido (obligatorio)</label>
-                            <input class="field" type="text" name="nombrecliente" placeholder="Ingrese su nombre" id="nombrecliente">
-                        <label for="mailcliente">E-mail (obligatorio)</label>
-                            <input class="field" type="email" name="mailcliente" placeholder="nombre@ejemplo.com" id="mailcliente">
-                        <label for="telcliente">Teléfono (obligatorio)</label>
-                            <input class="field" type="number" name="telcliente"  placeholder="Ingrese su número" id="telcliente">
-                        <label for="comenttype">Tema</label>
-                            <select name="comenttype" id="comenttype">
-                                <option value="A">Plomería</option>
-                                <option value="B">Gas</option>
-                                <option value="C">Limpieza de Tanques</option>
-                                <option value="D">Bombas</option>
-                                <option value="E">Reclamo</option>
-                                <option value="F">Sugerencia</option>
-                            </select>
-                        <label for="comentcliente">Comentarios</label>
-                            <textarea class="field" name="comentcliente" id="comentcliente" cols="40" rows="10"></textarea>
-                        <input type="submit" class="field btn btnColor" value="Enviar">
-                    </form>
-                </fieldset>
+                <p class="text text-center mb-0">© Daniel Alcázar 2021 Todos los Derechos Reservados</p>
             </div>
-        </main>
-        <!--Footer-->
-        <footer class="body-grid-hijoC w-100 py-4 flex-shrink-0 border-top border-dark">
-            <div class="container container-layout">
-                <div class="row gy-4">
-                    <!--Nav del footer-->
-                    <div class="col">
-                        <h5 class="mb-3"><strong>MENÚ</strong></h5>
-                        <ul class="list-unstyled">
-                            <li><a class="footLink" href="../index.html">INICIO</a></li>
-                            <li><a class="footLink" href="../pages/servicios.html">SERVICIOS</a></li>
-                            <li><a class="footLink" href="../pages/quienes-somos.html">QUIENES SOMOS</a></li>
-                            <li><a class="footLink" href="../pages/zonas.html">ZONAS DE TRABAJO</a></li>
-                            <li><a class="footLink" href="../pages/solicitar-presupuestos.html">SOLICITAR PRESUPUESTO</a></li>
-                            <li><a class="footLink" href="../pages/contacto.html">CONTACTO</a></li>
-                        </ul>
-                    </div>
-                    <!--Redes-->
-                    <div class="col-lg-4 col-md-6">
-                        <h5 class="mb-3"><strong>REDES</strong></h5>
-                        <a href="https://wa.me/5491125958968?text=Deseo%20recibir%20información%20sobre..." target="_blank">
-                            <img class="footerLogos" src="../imagenes/logo-whatsapp.webp" alt="whatsapp">
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <img class="footerLogos" src="../imagenes/logo-ig.webp" alt="instagram">
-                        </a>
-                        <a href="https://www.facebook.com/" target="_blank">
-                            <img class="footerLogos" src="../imagenes/logo-facebook.webp" alt="facebook">
-                        </a>
-                    </div>
-                    <!--Newsletter-->
-                    <div class="col-lg-4 col-md-6">
-                        <h5 class="mb-3"><strong>SUSCRIBETE</strong></h5>
-                        <p class="small">Ingresa tu correo electrónico para recibir información sobre nuestros servicios y ofertas.</p>
-                        <form class="suscribe" action="" method="get">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="nombre@ejemplo.com" aria-label="email" aria-describedby="button-addon2">
-                                <button class="btn btn-outline-dark" type="button" id="button-addon2">Enviar</button>
-                            </div>
-                    </div>
-                </div>
-                <!--Copyright-->
-                <div>
-                    <p class="text text-center mb-0">© Daniel Alcázar 2021 Todos los Derechos Reservados</p>
-                </div>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <!--Bootstrap js-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

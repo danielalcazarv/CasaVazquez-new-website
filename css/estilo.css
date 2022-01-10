@@ -250,21 +250,11 @@ main section div div div p {
   color: #184e77; }
 
 /**********Main de Servicios*********/
-main section div h5 {
-  color: #184e77;
-  font-weight: bold; }
-
-main section div .cardServParraf {
-  padding: 0; }
-
-main section div div p {
+main div div div div h5 {
   color: #184e77; }
 
-.cardServIcon {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  padding: 10px; }
+main div div div div p {
+  color: #184e77; }
 
 /**********Main de Quienes Somos*********/
 main section .p-quienes-somos {
