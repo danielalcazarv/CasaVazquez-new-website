@@ -1,3 +1,6 @@
+/**********Back**********/
+$color-back:#84ceeb;
+
 /**********Fonts**********/
 $color-blue:#184e77;
 $color-light-blue:#168aad;
@@ -10,12 +13,12 @@ $color-black-box:#0000004d;
 $color-light-green:#caffbf;
 
 /************Grid body variables*****************/
-$grid-body-col: 100%;
-$grid-body-row:20% 55% 25%;
+/*$grid-body-col: 100%;
+$grid-body-row:10% 70% 20%;
 $grid-body-area:"body__grid__hijoA"
                 "body__grid__hijoB"
                 "body__grid__hijoC";
-$grid-body-rgap:10px;
+$grid-body-rgap:10px;*/
 
 /***
 $grid-body-col-s: 100%;
@@ -32,12 +35,11 @@ $grid-body-col-l:8% 42% 42% 8%;
 $grid-body-col-l2:10% 40% 40% 10%;*/
 
 /************Grid nav variables*****************/
-$grid-nav-col: 100%;
+/*$grid-nav-col: 100%;
 $grid-nav-row:18% 82%;
 $grid-nav-area:"nav__grid__hijoA"
                 "nav__grid__hijoB";
-$grid-nav-rgap:0px;
-
+$grid-nav-rgap:0px;*/
 /*
 $grid-nav-col-s: 100%;
 $grid-nav-row-s:25% 75%;
@@ -64,10 +66,10 @@ $grid-nav-rgap-m:5px;*/
 /***************************/
 /**********MIXINS***********/
 /***************************/
-@mixin grid-content($temp-col, $temp-row, $temp-area, $j-items, $r-gap){
+/*@mixin grid-content($temp-col, $temp-row, $temp-area, $j-items, $r-gap){
     grid-template-columns:$temp-col;
     grid-template-rows: $temp-row;
     grid-template-areas:$temp-area;
     justify-items: $j-items;
     row-gap: $r-gap;
-}
+}*/

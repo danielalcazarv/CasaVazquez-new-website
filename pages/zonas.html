@@ -9,6 +9,7 @@
     <meta name="keywords" content="PLOMERO, GASISTA, PLOMERIA, GAS, DESTAPACIONES CLOACALES, DESTAPACIONES DESAGÜES, MANTENIMIENTO BOMBAS, LIMPIEZA DE TANQUES, URGENCIAS, REPARACION GRIFERIA, CABA, BUENOS AIRES, CAPITAL FEDERAL, ATENCION CONSORCIOS">
     <title>Casa Vázquez - Zonas de Trabajo</title>
     <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--css-->
     <link rel="stylesheet" href="../css/estilo.css">
@@ -24,23 +25,34 @@
 <body>
     <div class="body-grid">
         <header class="body-grid-hijoA">
-            <!--Menu de navegacion-->
-            <nav class="navBarOg container-layout">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent container-layout p-1">
+                <a class="navbar-brand" href="../index.html">
                 <!--Logotipo-->
-                <div class="navHijo1 animate__animated animate__slideInLeft">
-                    <a class="navbarBrand" href="../index.html">
-                        <img src="../imagenes/logo-casavazquez.webp" alt="logo-casavazquez">
-                    </a>
-                </div>
-                <!--Links de navegacion-->
-                <div class="navHijo2">
-                    <ul class="navBarLista">
-                        <li class="navItem"><a class="navLink" href="../index.html">INICIO</a></li>
-                        <li class="navItem"><a class="navLink" href="../pages/servicios.html">SERVICIOS</a></li>
-                        <li class="navItem"><a class="navLink" href="../pages/quienes-somos.html">QUIENES SOMOS</a></li>
-                        <li class="navItem"><a class="navLink" href="../pages/zonas.html">ZONAS DE TRABAJO</a></li>
-                        <li class="navItem"><a class="navLink" href="../pages/solicitar-presupuestos.html">SOLICITAR PRESUPUESTO</a></li>
-                        <li class="navItem"><a class="navLink" href="../pages/contacto.html">CONTACTO</a></li>
+                    <img src="../imagenes/logo-casavazquez.webp" width="300px" alt="logo-casavazquez">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav__link--color" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav__link--color" href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav__link--color" href="../pages/quienes-somos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" id="nav__link--color" href="../pages/zonas.html">Zonas de Trabajo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav__link--color" href="../pages/solicitar-presupuestos.html">Solicitar Presupuesto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav__link--color" href="../pages/contacto.html">Contacto</a>
+                        </li>
                     </ul>
                 </div>
             </nav>                
@@ -81,8 +93,8 @@
         </main>
         <!--Footer-->
         <footer class="body-grid-hijoC w-100 py-4 flex-shrink-0 border-top border-dark">
-            <div class="container py-4">
-                <div class="row gy-4 gx-5">
+            <div class="container container-layout">
+                <div class="row gy-4">
                     <!--Nav del footer-->
                     <div class="col">
                         <h5 class="mb-3"><strong>MENÚ</strong></h5>
@@ -121,11 +133,15 @@
                 </div>
                 <!--Copyright-->
                 <div>
-                    <p class="text text-center">© Daniel Alcázar 2021 Todos los Derechos Reservados</p>
+                    <p class="text text-center mb-0">© Daniel Alcázar 2021 Todos los Derechos Reservados</p>
                 </div>
             </div>
         </footer>
     </div>
+    <!--Bootstrap js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

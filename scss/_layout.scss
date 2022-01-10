@@ -1,7 +1,7 @@
 /*****************************/
 /**********GRID BODY**********/
 /*****************************/
-.body__grid{
+/*.body__grid{
     display: grid;
     @include grid-content($grid-body-col, $grid-body-row, $grid-body-area,center,$grid-body-rgap);
     align-items: start;
@@ -27,7 +27,7 @@
 /***************************/
 
 /**********Menu de Navegacion**********/
-.nav__grid{
+/*.nav__grid{
     display: grid;
     @include grid-content($grid-nav-col, $grid-nav-row, $grid-nav-area,center,$grid-nav-rgap);
     align-items: start;
@@ -59,33 +59,12 @@
                 }
             }
     }
-}
+}*/
 
 /***************************/
 /********MAIN CONTENT*******/
 /***************************/
 
-/**********Grid Main del Index***********/
-.mainIndexGrid{
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 40% 60%;
-    grid-template-areas:"mainIndex1"
-                        "mainIndex2";
-    justify-items: center;
-    align-items: start;
-    row-gap: 1.5rem;
-        .mainIndex1{
-            grid-area: mainIndex1;
-            @extend %medidas_ancho_alto__100;
-            align-self: center;
-        }
-        .mainIndex2{
-            grid-area: mainIndex2;
-            @extend %medidas_ancho_alto__100;
-            align-self: center;
-        }
-}
 
 /**********Grid Main de Servicios**********/
 .gridServ{

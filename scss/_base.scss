@@ -16,10 +16,7 @@
 }
 
 body{
-    background: hsla(197, 72%, 72%, 1);
-    background: linear-gradient(270deg, hsla(197, 72%, 72%, 1) 30%, hsla(223, 77%, 63%, 1) 77%, hsla(261, 54%, 60%, 1) 99%);
-    background: -moz-linear-gradient(270deg, hsla(197, 72%, 72%, 1) 30%, hsla(223, 77%, 63%, 1) 77%, hsla(261, 54%, 60%, 1) 99%);
-    background: -webkit-linear-gradient(270deg, hsla(197, 72%, 72%, 1) 30%, hsla(223, 77%, 63%, 1) 77%, hsla(261, 54%, 60%, 1) 99%);
+background-color: $color-back;
 }
 
 /***************************/
@@ -27,25 +24,14 @@ body{
 /***************************/
 
 /**********Menu de Navegacion**********/
-.nav__grid{
-    .nav__grid__hijoB{
-        .nav__menu{
-            .nav__menu__item{
-                text-decoration: none;
-                list-style: none;
-                .nav__menu__link{
-                    color: $color-blue;
-                    font-weight: bold;
-                    text-decoration: none;
-                    list-style: none;
-                        &:hover{
-                        color: $color-light-blue;
-                    }
-                }
-            }
-        }
+
+#nav__link--color{
+    color: $color-blue;
+    &:hover{
+        color: $color-light-blue;
     }
 }
+
 
 /***************************/
 /********MAIN CONTENT*******/
@@ -53,27 +39,22 @@ body{
 
 /**********Main del Index**********/
 main{
-    div{
-        section{
+    section{
+        div{
             div{
+                .cardIcon{
+                        width: 54px;
+                        height: 54px;
+                    }
                 div{
-                    .cardIcon{
-                            width: 54px;
-                            height: 54px;
-                        }
-                    
-                    div{
-                        
-                        h5{
-                            text-align: center;
-                            color: $color-blue;
-                            font-weight: bold;
-                            padding: 15px;
-                        }
-                        p{
-                            text-align: justify;
-                            color: $color-blue;
-                        }
+                    h5{
+                        text-align: center;
+                        color: $color-blue;
+                        font-weight: bold;
+                    }
+                    p{
+                        text-align: justify;
+                        color: $color-blue;
                     }
                 }
             }
@@ -206,6 +187,7 @@ main{
 /***************************/
 
 footer{
+    background-color: #8860d0;
     font-size: .95rem;
     h5{
     font-size: .95rem;
@@ -237,8 +219,6 @@ footer{
         div{
             p{
                     font-size: 0.8em;
-                    margin-top: 1rem;
-                    padding-top: 1rem;
             }
         }
     }
