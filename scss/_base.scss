@@ -85,6 +85,12 @@ main{
 
 /**********Main de Quienes Somos*********/
 main{
+    div{
+        .img-inst{
+            padding-top: 1.5rem;
+            width: 100%;
+        }
+    }
     section{
         .p-quienes-somos{
             text-align: justify;
@@ -179,7 +185,7 @@ main{
 /***************************/
 
 footer{
-    background-color: #8860d0;
+    background-color: $color-back-footer;
     font-size: .95rem;
     h5{
     font-size: .95rem;

@@ -5,47 +5,10 @@
 /**********Back**********/
 /**********Fonts**********/
 /********Boton Form*******/
-/************Grid body variables*****************/
-/*$grid-body-col: 100%;
-$grid-body-row:10% 70% 20%;
-$grid-body-area:"body__grid__hijoA"
-                "body__grid__hijoB"
-                "body__grid__hijoC";
-$grid-body-rgap:10px;*/
-/***
-$grid-body-col-s: 100%;
-$grid-body-row-s:20% 55% 25%;
-$grid-body-area-s:"gridA"
-                "gridB"
-                "gridC";
-$grid-body-rgap-s:10px;
-
-$grid-body-row-m:20% 60% 20%;
-$grid-body-rgap-m:15px;
-
-$grid-body-col-l:8% 42% 42% 8%;
-$grid-body-col-l2:10% 40% 40% 10%;*/
-/************Grid nav variables*****************/
-/*$grid-nav-col: 100%;
-$grid-nav-row:18% 82%;
-$grid-nav-area:"nav__grid__hijoA"
-                "nav__grid__hijoB";
-$grid-nav-rgap:0px;*/
-/*
-$grid-nav-col-s: 100%;
-$grid-nav-row-s:25% 75%;
-$grid-nav-area-s:"navHijo1" "navHijo2";
-$grid-nav-rgap-s:20px;
-
-$grid-nav-rgap-m:5px;*/
 /***************************/
 /**********EXTENDS**********/
 /***************************/
 /*****Tamaño contenido******/
-.gridServ .servHijo1, .gridServ .servHijo2, .gridServ .servHijo3, .gridServ .servHijo4, .gridServ .servHijo5 {
-  width: 90%;
-  height: 90%; }
-
 /***************************/
 /**********MIXINS***********/
 /***************************/
@@ -121,44 +84,64 @@ $grid-nav-rgap-m:5px;*/
 /********MAIN CONTENT*******/
 /***************************/
 /**********Grid Main de Servicios**********/
-.gridServ {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
-  grid-template-areas: "servHijo1 cardText1" "servHijo2 cardText2" "servHijo3 cardText3" "servHijo4 cardText4" "servHijo5 cardText5";
-  justify-items: center;
-  align-items: center; }
-  .gridServ .servHijo1 {
-    grid-area: servHijo1; }
-  .gridServ .servHijo2 {
-    grid-area: servHijo2; }
-  .gridServ .servHijo3 {
-    grid-area: servHijo3; }
-  .gridServ .servHijo4 {
-    grid-area: servHijo4; }
-  .gridServ .servHijo5 {
-    grid-area: servHijo5; }
-  .gridServ .cardText1 {
-    grid-area: cardText1;
-    align-self: center;
-    width: 100%; }
-  .gridServ .cardText2 {
-    grid-area: cardText2;
-    align-self: center;
-    width: 100%; }
-  .gridServ .cardText3 {
-    grid-area: cardText3;
-    align-self: center;
-    width: 100%; }
-  .gridServ .cardText4 {
-    grid-area: cardText4;
-    align-self: center;
-    width: 100%; }
-  .gridServ .cardText5 {
-    grid-area: cardText5;
-    align-self: center;
-    width: 100%; }
-
+/*
+.gridServ{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas:"servHijo1 cardText1"
+                        "servHijo2 cardText2"
+                        "servHijo3 cardText3"
+                        "servHijo4 cardText4"
+                        "servHijo5 cardText5";
+    justify-items: center;
+    align-items: center;
+    .servHijo1{
+        grid-area:servHijo1;
+        @extend %medidas_ancho_alto__90;
+    }
+    .servHijo2{
+        grid-area:servHijo2;
+        @extend %medidas_ancho_alto__90;;
+    }
+    .servHijo3{
+        grid-area:servHijo3;
+        @extend %medidas_ancho_alto__90;;
+    }
+    .servHijo4{
+        grid-area:servHijo4;
+        @extend %medidas_ancho_alto__90;
+    }
+    .servHijo5{
+        grid-area:servHijo5;
+        @extend %medidas_ancho_alto__90;
+    }
+    .cardText1{
+        grid-area: cardText1;
+        align-self: center;
+        width: 100%;
+    }
+    .cardText2{
+        grid-area: cardText2;
+        align-self: center;
+        width: 100%;
+    }
+    .cardText3{
+        grid-area: cardText3;
+        align-self: center;
+        width: 100%;
+    }
+    .cardText4{
+        grid-area: cardText4;
+        align-self: center;
+        width: 100%;
+    }
+    .cardText5{
+        grid-area: cardText5;
+        align-self: center;
+        width: 100%;
+    }
+}*/
 /***************************/
 /********FORMULARIOS********/
 /***************************/
@@ -221,7 +204,7 @@ input[type=number] {
   margin: 0 auto; }
 
 body {
-  background-color: #84ceeb; }
+  background-color: #8EE4AF; }
 
 /***************************/
 /***********HEADER**********/
@@ -257,6 +240,10 @@ main div div div div p {
   color: #184e77; }
 
 /**********Main de Quienes Somos*********/
+main div .img-inst {
+  padding-top: 1.5rem;
+  width: 100%; }
+
 main section .p-quienes-somos {
   text-align: justify;
   color: #184e77;
@@ -324,7 +311,7 @@ main div h3 {
 /***********FOOTER**********/
 /***************************/
 footer {
-  background-color: #8860d0;
+  background-color: #379683;
   font-size: .95rem; }
   footer h5 {
     font-size: .95rem; }
