@@ -2,7 +2,7 @@
 /*****************************/
 /***********IMPORTS***********/
 /*****************************/
-/**********Back**********/
+/**********Backgrounds**********/
 /**********Fonts**********/
 /********Boton Form*******/
 /***************************/
@@ -18,129 +18,6 @@
     grid-template-areas:$temp-area;
     justify-items: $j-items;
     row-gap: $r-gap;
-}*/
-/*****************************/
-/**********GRID BODY**********/
-/*****************************/
-/*.body__grid{
-    display: grid;
-    @include grid-content($grid-body-col, $grid-body-row, $grid-body-area,center,$grid-body-rgap);
-    align-items: start;
-    .body__grid__hijoA{
-        grid-area: body__grid__hijoA;
-        align-self: center;
-        @extend %medidas_ancho_alto__100;
-    }
-    .body__grid__hijoB{
-        grid-area: body__grid__hijoB;
-        align-self: center;
-        @extend %medidas_ancho_alto__100;
-    }
-    .body__grid__hijoC{
-        grid-area: body__grid__hijoC;
-        align-self: center;
-        @extend %medidas_ancho_alto__100;
-    }
-}
-
-/***************************/
-/***********HEADER**********/
-/***************************/
-/**********Menu de Navegacion**********/
-/*.nav__grid{
-    display: grid;
-    @include grid-content($grid-nav-col, $grid-nav-row, $grid-nav-area,center,$grid-nav-rgap);
-    align-items: start;
-    .nav__grid__hijoA{
-        grid-area:nav__grid__hijoA;
-        @extend %medidas_ancho_alto__100;
-        align-self: center;
-            .nav-brand{
-                img{
-                    @extend %medidas_ancho_alto__100;
-                }
-            }
-    }
-    .nav__grid__hijoB{
-        grid-area:nav__grid__hijoB;
-        @extend %medidas_ancho_alto__100;
-        align-self: center;
-        .nav__menu{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                flex-wrap:nowrap;
-                margin-left: 0rem;
-                padding-left: 0rem;
-                @extend %medidas_ancho_alto__100;
-                .nav__menu__item{
-                padding: 15px;
-                text-align: center;
-                }
-            }
-    }
-}*/
-/***************************/
-/********MAIN CONTENT*******/
-/***************************/
-/**********Grid Main de Servicios**********/
-/*
-.gridServ{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    grid-template-areas:"servHijo1 cardText1"
-                        "servHijo2 cardText2"
-                        "servHijo3 cardText3"
-                        "servHijo4 cardText4"
-                        "servHijo5 cardText5";
-    justify-items: center;
-    align-items: center;
-    .servHijo1{
-        grid-area:servHijo1;
-        @extend %medidas_ancho_alto__90;
-    }
-    .servHijo2{
-        grid-area:servHijo2;
-        @extend %medidas_ancho_alto__90;;
-    }
-    .servHijo3{
-        grid-area:servHijo3;
-        @extend %medidas_ancho_alto__90;;
-    }
-    .servHijo4{
-        grid-area:servHijo4;
-        @extend %medidas_ancho_alto__90;
-    }
-    .servHijo5{
-        grid-area:servHijo5;
-        @extend %medidas_ancho_alto__90;
-    }
-    .cardText1{
-        grid-area: cardText1;
-        align-self: center;
-        width: 100%;
-    }
-    .cardText2{
-        grid-area: cardText2;
-        align-self: center;
-        width: 100%;
-    }
-    .cardText3{
-        grid-area: cardText3;
-        align-self: center;
-        width: 100%;
-    }
-    .cardText4{
-        grid-area: cardText4;
-        align-self: center;
-        width: 100%;
-    }
-    .cardText5{
-        grid-area: cardText5;
-        align-self: center;
-        width: 100%;
-    }
 }*/
 /***************************/
 /********FORMULARIOS********/
@@ -204,7 +81,7 @@ input[type=number] {
   margin: 0 auto; }
 
 body {
-  background-color: #8EE4AF; }
+  background-color: #8ee4af; }
 
 /***************************/
 /***********HEADER**********/
@@ -233,18 +110,19 @@ main section div div div p {
   color: #184e77; }
 
 /**********Main de Servicios*********/
-main div div div div h5 {
-  color: #184e77; }
-
-main div div div div p {
-  color: #184e77; }
+main div div div div {
+  background-color: #edf5e1; }
+  main div div div div h5 {
+    color: #184e77; }
+  main div div div div p {
+    color: #184e77; }
 
 /**********Main de Quienes Somos*********/
-main div .img-inst {
+main div .img__inst {
   padding-top: 1.5rem;
   width: 100%; }
 
-main section .p-quienes-somos {
+main section .text__nosotros {
   text-align: justify;
   color: #184e77;
   font-size: 1.2em;
@@ -254,37 +132,41 @@ main section .p-quienes-somos {
   margin-bottom: 2rem; }
 
 /**********Main de Zonas*********/
-main div .mapZonas {
-  height: 600px;
-  margin-bottom: 2rem; }
+main .mapa {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+  main .mapa .mapZonas {
+    height: 600px; }
 
-main .zonasBox {
+main .zonas__container {
+  background-color: #edf5e1;
   display: flex;
   flex-direction: row;
   border-width: 5px;
   border-style: solid;
   border-color: #184e77;
-  margin: 0 auto; }
-  main .zonasBox .zonasCaba {
+  margin: 0 auto;
+  margin-bottom: 1.5rem; }
+  main .zonas__container .zonas__container--caba {
     display: flex;
     width: 50%;
     flex-direction: column; }
-    main .zonasBox .zonasCaba ul li {
+    main .zonas__container .zonas__container--caba ul li {
       text-align: justify;
       color: #3c943c;
       list-style: none; }
-    main .zonasBox .zonasCaba h3 {
+    main .zonas__container .zonas__container--caba h3 {
       text-align: center;
       color: #3c943c; }
-  main .zonasBox .zonasGba {
+  main .zonas__container .zonas__container--gba {
     display: flex;
     width: 50%;
     flex-direction: column; }
-    main .zonasBox .zonasGba ul li {
+    main .zonas__container .zonas__container--gba ul li {
       text-align: justify;
       color: #a04252;
       list-style: none; }
-    main .zonasBox .zonasGba h3 {
+    main .zonas__container .zonas__container--gba h3 {
       text-align: center;
       color: #a04252; }
 

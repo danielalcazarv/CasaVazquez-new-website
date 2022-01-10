@@ -70,6 +70,7 @@ main{
         div{
             div{
                 div{
+                    background-color: $color-back-card;
                     h5{
                         color: $color-blue;
                     }
@@ -86,13 +87,13 @@ main{
 /**********Main de Quienes Somos*********/
 main{
     div{
-        .img-inst{
+        .img__inst{
             padding-top: 1.5rem;
             width: 100%;
         }
     }
     section{
-        .p-quienes-somos{
+        .text__nosotros{
             text-align: justify;
             color: $color-blue;
             font-size: 1.2em;
@@ -106,20 +107,23 @@ main{
 
 /**********Main de Zonas*********/
 main{
-    div{
+    .mapa{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
         .mapZonas{
             height:600px;
-            margin-bottom: 2rem;
         }
     }
-    .zonasBox{
+    .zonas__container{
+        background-color: $color-box;
         display: flex;
         flex-direction: row;
         border-width: 5px;
         border-style: solid;
         border-color: $color-blue;
         margin: 0 auto;
-        .zonasCaba{
+        margin-bottom: 1.5rem;
+        .zonas__container--caba{
             display: flex;
             width: 50%;
             flex-direction: column;
@@ -135,7 +139,7 @@ main{
                 color: $color-green;
             }
         }
-        .zonasGba{
+        .zonas__container--gba{
             display: flex;
             width: 50%;
             flex-direction: column;
