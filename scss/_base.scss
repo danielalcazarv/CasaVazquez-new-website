@@ -108,16 +108,17 @@ main{
 /**********Main de Zonas*********/
 main{
     .mapa{
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-        .mapZonas{
-            height:600px;
-        }
     }
     .zonas__container{
         background-color: $color-box;
         display: flex;
         flex-direction: row;
+        max-width: 800px;
         border-width: 5px;
         border-style: solid;
         border-color: $color-blue;
@@ -164,15 +165,11 @@ main{
         h2{
             text-align: center;
             color: $color-blue;
-            font-size: 2em;
-            padding: 20px;
+            font-size: 2rem;
+            /*padding: 1rem;*/
         }
-        h3{
-            text-align: center;
+        p{
             color: $color-blue;
-            font-size: 1.4em;
-            padding: auto;
-            margin-bottom: 15px;
             a{
                 text-decoration: none;
                 color: $color-blue;

@@ -27,7 +27,7 @@ main div fieldset {
   border: 0; }
   main div fieldset form {
     margin: 0 auto;
-    width: 65%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -133,15 +133,17 @@ main section .text__nosotros {
 
 /**********Main de Zonas*********/
 main .mapa {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem; }
-  main .mapa .mapZonas {
-    height: 600px; }
 
 main .zonas__container {
   background-color: #edf5e1;
   display: flex;
   flex-direction: row;
+  max-width: 800px;
   border-width: 5px;
   border-style: solid;
   border-color: #184e77;
@@ -174,19 +176,15 @@ main .zonas__container {
 main div h2 {
   text-align: center;
   color: #184e77;
-  font-size: 2em;
-  padding: 20px; }
+  font-size: 2rem;
+  /*padding: 1rem;*/ }
 
-main div h3 {
-  text-align: center;
-  color: #184e77;
-  font-size: 1.4em;
-  padding: auto;
-  margin-bottom: 15px; }
-  main div h3 a {
+main div p {
+  color: #184e77; }
+  main div p a {
     text-decoration: none;
     color: #184e77; }
-    main div h3 a:hover {
+    main div p a:hover {
       color: #168aad; }
 
 /***************************/
