@@ -25,18 +25,14 @@ $color-light-green:#caffbf;
     height: 100%;
 }
 
-%medidas_ancho_alto__90{
-    width: 90%;
-    height: 90%;
-}
 
 /***************************/
 /**********MIXINS***********/
 /***************************/
-/*@mixin grid-content($temp-col, $temp-row, $temp-area, $j-items, $r-gap){
-    grid-template-columns:$temp-col;
-    grid-template-rows: $temp-row;
-    grid-template-areas:$temp-area;
-    justify-items: $j-items;
-    row-gap: $r-gap;
-}*/
+@mixin text-format ($align, $color-t,$font-s,$font-w){
+    text-align: $align;
+    color: $color-t;
+    font-size: $font-s;
+    font-weight: $font-w;
+}
+

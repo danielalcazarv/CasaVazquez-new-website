@@ -12,49 +12,41 @@
 /***************************/
 /**********MIXINS***********/
 /***************************/
-/*@mixin grid-content($temp-col, $temp-row, $temp-area, $j-items, $r-gap){
-    grid-template-columns:$temp-col;
-    grid-template-rows: $temp-row;
-    grid-template-areas:$temp-area;
-    justify-items: $j-items;
-    row-gap: $r-gap;
-}*/
 /***************************/
 /********FORMULARIOS********/
 /***************************/
 /*********Form y Boton**********/
 main div fieldset {
   border: 0; }
-  main div fieldset form {
+  main div fieldset .formulario {
     margin: 0 auto;
-    width: 55%;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 15px;
     color: #184e77; }
-    main div fieldset form label {
+    main div fieldset .formulario label {
       padding-top: 10px;
       padding-bottom: 10px;
       text-align: left;
       font-weight: bold; }
-    main div fieldset form ul {
+    main div fieldset .formulario ul {
       text-align: justify;
       line-height: 25px;
       padding-left: 0;
       list-style: none; }
-    main div fieldset form .btn {
+    main div fieldset .formulario .btn {
       border-radius: 3px;
       display: inline-block;
       padding: 20px 15px;
       text-decoration: none;
       text-shadow: 0 1px #ffffff4d;
       box-shadow: 0 1px 1px #0000004d; }
-    main div fieldset form .btnColor {
+    main div fieldset .formulario .btnColor {
       color: white;
       background-color: #184e77; }
-      main div fieldset form .btnColor:hover {
+      main div fieldset .formulario .btnColor:hover {
         background-color: #168aad; }
-      main div fieldset form .btnColor:active {
+      main div fieldset .formulario .btnColor:active {
         background-color: #caffbf; }
 
 /*Ocultar flechas Input Number*/
@@ -65,6 +57,62 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield; }
+
+/***************************/
+/*******MEDIAQUERIES********/
+/***************************/
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  /****mapas****/
+  body main .mapa {
+    max-width: 420px; }
+  body main .zonas__container {
+    max-width: 420px; }
+  /****formularios****/
+  main div fieldset .formulario {
+    padding: 20px; } }
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  /****mapas****/
+  body main .mapa {
+    max-width: 520px; }
+  body main .zonas__container {
+    max-width: 520px; }
+  /****formularios****/
+  main div fieldset .formulario {
+    padding: 30px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /****mapas****/
+  body main .mapa {
+    max-width: 700px; }
+  body main .zonas__container {
+    max-width: 700px; }
+  /****formularios****/
+  main div fieldset .formulario {
+    width: 70%;
+    padding: 30px; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  /****mapas****/
+  body main .mapa {
+    max-width: 800px; }
+  body main .zonas__container {
+    max-width: 800px; }
+  /****formularios****/
+  main div fieldset .formulario {
+    width: 65%;
+    padding: 30px; } }
+
+@media screen and (min-width: 1200px) {
+  /****mapas****/
+  body main #mapa {
+    max-width: 900px; }
+  body main .zonas__container {
+    max-width: 900px; }
+  /****formularios****/
+  main div fieldset .formulario {
+    width: 55%;
+    padding: 30px; } }
 
 /***************************/
 /**********RESETS**********/
@@ -103,11 +151,14 @@ main section div div .cardIcon {
 main section div div div h5 {
   text-align: center;
   color: #184e77;
+  font-size: 1.25rem;
   font-weight: bold; }
 
 main section div div div p {
   text-align: justify;
-  color: #184e77; }
+  color: #184e77;
+  font-size: 1rem;
+  font-weight: 400; }
 
 /**********Main de Servicios*********/
 main div div div div {
@@ -115,7 +166,8 @@ main div div div div {
   main div div div div h5 {
     color: #184e77; }
   main div div div div p {
-    color: #184e77; }
+    color: #184e77;
+    font-size: 0.9rem; }
 
 /**********Main de Quienes Somos*********/
 main div .img__inst {
@@ -125,15 +177,15 @@ main div .img__inst {
 main section .text__nosotros {
   text-align: justify;
   color: #184e77;
-  font-size: 1.2em;
-  line-height: 1.5em;
-  padding: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 2rem; }
 
 /**********Main de Zonas*********/
 main .mapa {
-  max-width: 800px;
+  max-width: 300px;
   width: 100%;
   margin: 0 auto;
   padding-top: 1.5rem;
@@ -143,7 +195,7 @@ main .zonas__container {
   background-color: #edf5e1;
   display: flex;
   flex-direction: row;
-  max-width: 800px;
+  max-width: 300px;
   border-width: 5px;
   border-style: solid;
   border-color: #184e77;
@@ -156,10 +208,14 @@ main .zonas__container {
     main .zonas__container .zonas__container--caba ul li {
       text-align: justify;
       color: #3c943c;
+      font-size: 0.9rem;
+      font-weight: 400;
       list-style: none; }
     main .zonas__container .zonas__container--caba h3 {
       text-align: center;
-      color: #3c943c; }
+      color: #3c943c;
+      font-size: 1rem;
+      font-weight: 500; }
   main .zonas__container .zonas__container--gba {
     display: flex;
     width: 50%;
@@ -167,17 +223,21 @@ main .zonas__container {
     main .zonas__container .zonas__container--gba ul li {
       text-align: justify;
       color: #a04252;
+      font-size: 0.9rem;
+      font-weight: 400;
       list-style: none; }
     main .zonas__container .zonas__container--gba h3 {
       text-align: center;
-      color: #a04252; }
+      color: #a04252;
+      font-size: 1rem;
+      font-weight: 500; }
 
 /**********Main de Contacto y Presupuestos*********/
 main div h2 {
   text-align: center;
   color: #184e77;
   font-size: 2rem;
-  /*padding: 1rem;*/ }
+  font-weight: inherit; }
 
 main div p {
   color: #184e77; }
@@ -207,4 +267,4 @@ footer {
       width: 28px;
       height: 28px; }
   footer div div p {
-    font-size: 0.8em; }
+    font-size: 0.75rem; }

@@ -47,13 +47,10 @@ main{
                     }
                 div{
                     h5{
-                        text-align: center;
-                        color: $color-blue;
-                        font-weight: bold;
+                        @include text-format(center,$color-blue,1.25rem,bold);
                     }
                     p{
-                        text-align: justify;
-                        color: $color-blue;
+                        @include text-format(justify,$color-blue,1rem,400);
                     }
                 }
             }
@@ -75,6 +72,7 @@ main{
                     }
                     p{
                         color: $color-blue;
+                        font-size: 0.9rem;
                     }
                 }
             }
@@ -95,9 +93,9 @@ main{
         .text__nosotros{
             text-align: justify;
             color: $color-blue;
-            font-size: 1.2em;
-            line-height: 1.5em;
-            padding: 2rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            padding: 1.5rem;
             margin-top: 1rem;
             margin-bottom: 2rem;
         }
@@ -107,7 +105,7 @@ main{
 /**********Main de Zonas*********/
 main{
     .mapa{
-        max-width: 800px;
+        max-width: 300px;
         width: 100%;
         margin: 0 auto;
         padding-top: 1.5rem;
@@ -117,7 +115,7 @@ main{
         background-color: $color-box;
         display: flex;
         flex-direction: row;
-        max-width: 800px;
+        max-width: 300px;
         border-width: 5px;
         border-style: solid;
         border-color: $color-blue;
@@ -129,14 +127,12 @@ main{
             flex-direction: column;
             ul{
                 li{
-                    text-align: justify;
-                    color: $color-green;
+                    @include text-format(justify,$color-green,0.9rem,400);
                     list-style: none;
                 }
             }
             h3{
-                text-align: center;
-                color: $color-green;
+                @include text-format(center,$color-green,1rem,500);
             }
         }
         .zonas__container--gba{
@@ -145,14 +141,12 @@ main{
             flex-direction: column;
             ul{
                 li{
-                    text-align: justify;
-                    color: $color-red;
+                    @include text-format(justify,$color-red,0.9rem,400);
                     list-style: none;
                 }
             }
             h3{
-                text-align: center;
-                color: $color-red;
+                @include text-format(center,$color-red,1rem,500);
             }
         }
     }
@@ -162,10 +156,7 @@ main{
 main{
     div{
         h2{
-            text-align: center;
-            color: $color-blue;
-            font-size: 2rem;
-            /*padding: 1rem;*/
+            @include text-format(center,$color-blue,2rem,inherit);
         }
         p{
             color: $color-blue;
@@ -216,7 +207,7 @@ footer{
         }
         div{
             p{
-                    font-size: 0.8em;
+                    font-size: 0.75rem;
             }
         }
     }
