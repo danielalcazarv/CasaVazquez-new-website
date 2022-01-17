@@ -2,7 +2,8 @@
 /*****************************/
 /***********IMPORTS***********/
 /*****************************/
-/**********Backgrounds**********/
+/**********Backgrounds color**********/
+/**********Backgrounds img**********/
 /**********Fonts**********/
 /********Boton Form*******/
 /***************************/
@@ -178,10 +179,9 @@ main section .text__nosotros {
   text-align: justify;
   color: #184e77;
   font-size: 1rem;
+  font-weight: 400;
   line-height: 1.5rem;
-  padding: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem; }
+  padding: 0.5rem; }
 
 /**********Main de Zonas*********/
 main .mapa {
@@ -246,6 +246,9 @@ main div p {
     color: #184e77; }
     main div p a:hover {
       color: #168aad; }
+
+.background__texture {
+  background-image: url(../imagenes/backg-asfalt-dark.png); }
 
 /***************************/
 /***********FOOTER**********/

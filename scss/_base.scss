@@ -91,13 +91,9 @@ main{
     }
     section{
         .text__nosotros{
-            text-align: justify;
-            color: $color-blue;
-            font-size: 1rem;
+            @include text-format(justify, $color-blue, 1rem, 400);
             line-height: 1.5rem;
-            padding: 1.5rem;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
+            padding: 0.5rem;
         }
     }
 }
@@ -169,6 +165,10 @@ main{
             }
         }
     }
+}
+
+.background__texture{
+    background-image: $backg-texture;
 }
 
 /***************************/
