@@ -129,8 +129,17 @@ input[type=number] {
   width: 100%;
   margin: 0 auto; }
 
+/***************************/
+/********BACKGROUNDS********/
+/***************************/
 body {
   background-color: #8ee4af; }
+
+/*main{
+    background-image: $backg-texture;
+}*/
+.background__texture {
+  background-image: url(../imagenes/backg-asfalt-dark.png); }
 
 /***************************/
 /***********HEADER**********/
@@ -162,11 +171,11 @@ main section div div div p {
   font-weight: 400; }
 
 /**********Main de Servicios*********/
-main div div div div {
+main div div div .card__servicios {
   background-color: #edf5e1; }
-  main div div div div h5 {
+  main div div div .card__servicios h5 {
     color: #184e77; }
-  main div div div div p {
+  main div div div .card__servicios p {
     color: #184e77;
     font-size: 0.9rem; }
 
@@ -239,6 +248,9 @@ main div h2 {
   font-size: 2rem;
   font-weight: inherit; }
 
+main div h5 {
+  color: #184e77; }
+
 main div p {
   color: #184e77; }
   main div p a {
@@ -247,8 +259,16 @@ main div p {
     main div p a:hover {
       color: #168aad; }
 
-.background__texture {
-  background-image: url(../imagenes/backg-asfalt-dark.png); }
+.btn-custom {
+  background-color: #184e77;
+  border-color: #184e77;
+  color: white; }
+  .btn-custom:hover {
+    background-color: #168aad;
+    color: white;
+    border-color: #168aad; }
+  .btn-custom:active {
+    background-color: #caffbf; }
 
 /***************************/
 /***********FOOTER**********/

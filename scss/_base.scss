@@ -15,8 +15,21 @@
     margin: 0 auto;
 }
 
+/***************************/
+/********BACKGROUNDS********/
+/***************************/
+
 body{
-background-color: $color-back;
+    background-color: $color-back;
+}
+
+/*main{
+    background-image: $backg-texture;
+}*/
+
+
+.background__texture{
+    background-image: $backg-texture;
 }
 
 /***************************/
@@ -65,7 +78,7 @@ main{
     div{
         div{
             div{
-                div{
+                .card__servicios{
                     background-color: $color-back-card;
                     h5{
                         color: $color-blue;
@@ -154,6 +167,9 @@ main{
         h2{
             @include text-format(center,$color-blue,2rem,inherit);
         }
+        h5{
+            color: $color-blue;
+        }
         p{
             color: $color-blue;
             a{
@@ -167,8 +183,18 @@ main{
     }
 }
 
-.background__texture{
-    background-image: $backg-texture;
+.btn-custom{
+    background-color: $color-blue;
+    border-color: $color-blue;
+    color: white;
+    &:hover{
+        background-color: $color-light-blue;
+        color: white;
+        border-color: $color-light-blue;
+    }
+    &:active{
+        background-color: $color-light-green;
+    }
 }
 
 /***************************/

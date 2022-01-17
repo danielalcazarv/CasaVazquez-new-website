@@ -10,6 +10,8 @@
     <title>Casa Vázquez - Contacto</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <!--css-->
     <link rel="stylesheet" href="../css/estilo.css">
     <!--GoogleFonts-->
@@ -63,25 +65,95 @@
                     <h2 class="center text-center fw-800">
                         <b>Contáctanos</b>
                     </h2>
+                    <div class="card bg-transparent border-0">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent">
+                                <h5 class="card-title"><i class="bi bi-telephone-fill"></i> Atención telefónica</h5>
+                                <p class="card-text">
+                                    Tel: 11 2595 8968 <br>
+                                    De lunes a viernes de 9 a 18hs y sábados de 9 a 13hs.
+                                </p>
+                                <a href="tel:1125958968" class="btn btn-custom">Llamá ahora</a>
+                            </li>
+                            <li class="list-group-item bg-transparent">
+                                <h5 class="card-title"><i class="bi bi-life-preserver"></i> Atención URGENCIAS</h5>
+                                <p class="card-text">
+                                    Tel: 11 5384 3332 <br>
+                                    Las 24hs los 365 días del año.
+                                </p>
+                                <a href="tel:1153843332" class="btn btn-custom">Llamar ahora</a>
+                            </li>
+                            <li class="list-group-item bg-transparent">
+                                <h5 class="card-title"><i class="bi bi-envelope"></i> Correo electrónico</h5>
+                                <p class="card-text"><a href="mailto:info@casavazquez.com.ar">info@casavazquez.com.ar</a></p>
+                            </li>
+                            <li class="list-group-item bg-transparent">
+                                <h5 class="card-title"><i class="bi bi-whatsapp"></i> WhatsApp</h5>
+                                <p class="card-text">Déjanos un mensaje.</p>
+                                <a href="https://wa.me/5491125958968?text=Deseo%20recibir%20información%20sobre..." class="btn btn-custom">Chatea con nosotros</a>
+                            </li>
+                            <li class="list-group-item bg-transparent">
+                                <h5 class="card-title"><i class="bi bi-geo-alt"></i> Dirección</h5>
+                                <p class="card-text">Av. Díaz Vélez 3735 - CABA</p>
+                                <div class="mapa animate__animated animate__fadeInUpBig" id="mapa">
+                                    <iframe class="container-layout mapZonas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8320715245595!2d-58.421397884841895!3d-34.608407665253075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca5fd93f82ef%3A0x148d5253e297238e!2sCasa%20V%C3%A1zquez!5e0!3m2!1ses-419!2sar!4v1636580212137!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!----
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body text-center col-sm">
+                            <h5 class="card-title"><i class="bi bi-telephone-fill"></i> Atención telefónica 11 2595 8968</h5>
+                            <p class="card-text">De lunes a viernes de 9 a 18hs y sábados de 9 a 13hs.</p>
+                            <a href="tel:1125958968" class="btn btn-custom">Llamá ahora</a>
+                        </div>
+                    </div>
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body text-center col-sm">
+                            <h5 class="card-title"><i class="bi bi-life-preserver"></i> Atención URGENCIAS 11 5384 3332</h5>
+                            <p class="card-text">Las 24hs los 365 días del año.</p>
+                            <a href="tel:1153843332" class="btn btn-custom">Llamar ahora</a>
+                        </div>
+                    </div>
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body text-center col-sm">
+                            <h5 class="card-title"><i class="bi bi-envelope"></i> Correo electrónico</h5>
+                            <p class="card-text"><a href="mailto:info@casavazquez.com.ar">info@casavazquez.com.ar</a></p>
+                        </div>
+                    </div>
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body text-center col-sm">
+                            <h5 class="card-title"><i class="bi bi-whatsapp"></i> WhatsApp</h5>
+                            <p class="card-text">Déjanos un mensaje.</p>
+                            <a href="https://wa.me/5491125958968?text=Deseo%20recibir%20información%20sobre..." class="btn btn-custom">Chatea con nosotros</a>
+                        </div>
+                    </div>
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body text-center col-sm">
+                            <h5 class="card-title"><i class="bi bi-geo-alt"></i> Dirección</h5>
+                            <p class="card-text">Av. Díaz Vélez 3735 - CABA</p>
+                        </div>
+                    </div>
+                    <!----
                     <p class="mt-4 text-center"> <a href="tel:1125958968">15 2595 8968</a> - de lunes a viernes de 9 a 18hs  y sábados de 9 a 13hs.</p>
                     <p class="text-center"> <a href="tel:1153843332">15 5384 3332</a> - Atención Urgencias las 24HS</p>
                     <p class="text-center"><a href="mailto:info@casavazquez.com.ar">info@casavazquez.com.ar</a></p>
                     <p class="text-center">Déjanos un mensaje por WhatsApp haciendo <a href="https://wa.me/5491125958968?text=Deseo%20recibir%20información%20sobre...">click aquí</a></p>
-                    <p class="text-center">Estamos en Av. Díaz Vélez 3735 - CABA</p>
+                    <p class="text-center">Estamos en Av. Díaz Vélez 3735 - CABA</p>-->
                 </div>
             </div>
         </div>
-        <div class="mapa animate__animated animate__fadeInUpBig" id="mapa">
-            <iframe class="container-layout mapZonas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8320715245595!2d-58.421397884841895!3d-34.608407665253075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca5fd93f82ef%3A0x148d5253e297238e!2sCasa%20V%C3%A1zquez!5e0!3m2!1ses-419!2sar!4v1636580212137!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="background__texture">
+
+
+        <div>
             <div class="container py-4">
                 <h2 class="center text-center fw-800">
                     <b>Consultas y Sugerencias</b>
                 </h2>
             </div>
         </div>
-        <div class="background__texture">
+        <div>
             <fieldset>
                 <form class="form formulario" action="" method="get">
                     <label for="nombrecliente">Nombre y apellido (obligatorio)</label>
