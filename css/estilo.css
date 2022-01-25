@@ -182,6 +182,15 @@ main section div div div p {
   font-size: 1rem;
   font-weight: 400; }
 
+.alert-danger {
+  color: white;
+  font-size: .92rem;
+  background-color: #FF2442;
+  border-color: #FF2442; }
+  .alert-danger .alert-link {
+    color: white;
+    text-decoration: none; }
+
 /**********Main de Servicios*********/
 main div div div .card__servicios {
   background-color: #edf5e1; }

@@ -66,10 +66,7 @@ input[type=number] {
 @media screen and (min-width: 480px) and (max-width:600px){
     /****mapas****/
     body{
-        main{/*
-            .mapa{
-            max-width: 420px;
-            }*/
+        main{
             .zonas__container{
                 max-width: 420px;
             }
@@ -90,10 +87,7 @@ input[type=number] {
 @media screen and (min-width: 600px) and (max-width:768px){
     /****mapas****/
     body{
-        main{/*
-            .mapa{
-            max-width: 520px;
-            }*/
+        main{/
             .zonas__container{
                 max-width: 520px;
             }
@@ -114,10 +108,7 @@ input[type=number] {
 @media screen and (min-width: 768px) and (max-width:1024px){
     /****mapas****/
     body{
-        main{/*
-            .mapa{
-            max-width: 700px;
-            }*/
+        main{
             .zonas__container{
                 max-width: 700px;
             }
@@ -139,10 +130,7 @@ input[type=number] {
 @media screen and (min-width: 1024px) and (max-width:1200px){
     /****mapas****/
     body{
-        main{/*
-            .mapa{
-            max-width: 800px;
-            }*/
+        main{
             .zonas__container{
                 max-width: 800px;
             }
@@ -164,10 +152,7 @@ input[type=number] {
 @media screen and (min-width: 1200px){
     /****mapas****/
     body{
-        main{/*
-            #mapa{
-            max-width: 900px;
-            }*/
+        main{
             .zonas__container{
                 max-width: 900px;
             }
