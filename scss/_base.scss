@@ -108,13 +108,12 @@ main{
 
 /**********Main de Zonas*********/
 main{
-    .mapa{
-        max-width: 300px;
+    .zonas__container{
+        max-width: 900px;
         width: 100%;
         margin: 0 auto;
-        padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-    }
+    }/*
     .zonas__container{
         background-color: $color-box;
         display: flex;
@@ -153,7 +152,12 @@ main{
                 @include text-format(center,$color-red,1rem,500);
             }
         }
-    }
+    }*/
+}
+
+.accordion__icon{
+    width: 123px;
+    height: 123px;
 }
 
 /**********Main de Contacto y Presupuestos*********/

@@ -205,53 +205,56 @@ main section .text__nosotros {
   padding: 0.5rem; }
 
 /**********Main de Zonas*********/
-main .mapa {
-  max-width: 300px;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem; }
+main {
+  /*
+    .zonas__container{
+        background-color: $color-box;
+        display: flex;
+        flex-direction: row;
+        max-width: 300px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: $color-blue;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+        .zonas__container--caba{
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            ul{
+                li{
+                    @include text-format(justify,$color-green,0.9rem,400);
+                    list-style: none;
+                }
+            }
+            h3{
+                @include text-format(center,$color-green,1rem,500);
+            }
+        }
+        .zonas__container--gba{
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            ul{
+                li{
+                    @include text-format(justify,$color-red,0.9rem,400);
+                    list-style: none;
+                }
+            }
+            h3{
+                @include text-format(center,$color-red,1rem,500);
+            }
+        }
+    }*/ }
+  main .zonas__container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem; }
 
-main .zonas__container {
-  background-color: #edf5e1;
-  display: flex;
-  flex-direction: row;
-  max-width: 300px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #184e77;
-  margin: 0 auto;
-  margin-bottom: 1.5rem; }
-  main .zonas__container .zonas__container--caba {
-    display: flex;
-    width: 50%;
-    flex-direction: column; }
-    main .zonas__container .zonas__container--caba ul li {
-      text-align: justify;
-      color: #3c943c;
-      font-size: 0.9rem;
-      font-weight: 400;
-      list-style: none; }
-    main .zonas__container .zonas__container--caba h3 {
-      text-align: center;
-      color: #3c943c;
-      font-size: 1rem;
-      font-weight: 500; }
-  main .zonas__container .zonas__container--gba {
-    display: flex;
-    width: 50%;
-    flex-direction: column; }
-    main .zonas__container .zonas__container--gba ul li {
-      text-align: justify;
-      color: #a04252;
-      font-size: 0.9rem;
-      font-weight: 400;
-      list-style: none; }
-    main .zonas__container .zonas__container--gba h3 {
-      text-align: center;
-      color: #a04252;
-      font-size: 1rem;
-      font-weight: 500; }
+.accordion__icon {
+  width: 123px;
+  height: 123px; }
 
 /**********Main de Contacto y Presupuestos*********/
 main div h2 {
