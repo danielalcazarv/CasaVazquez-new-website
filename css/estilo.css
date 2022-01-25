@@ -205,56 +205,26 @@ main section .text__nosotros {
   padding: 0.5rem; }
 
 /**********Main de Zonas*********/
-main {
-  /*
-    .zonas__container{
-        background-color: $color-box;
-        display: flex;
-        flex-direction: row;
-        max-width: 300px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: $color-blue;
-        margin: 0 auto;
-        margin-bottom: 1.5rem;
-        .zonas__container--caba{
-            display: flex;
-            width: 50%;
-            flex-direction: column;
-            ul{
-                li{
-                    @include text-format(justify,$color-green,0.9rem,400);
-                    list-style: none;
-                }
-            }
-            h3{
-                @include text-format(center,$color-green,1rem,500);
-            }
-        }
-        .zonas__container--gba{
-            display: flex;
-            width: 50%;
-            flex-direction: column;
-            ul{
-                li{
-                    @include text-format(justify,$color-red,0.9rem,400);
-                    list-style: none;
-                }
-            }
-            h3{
-                @include text-format(center,$color-red,1rem,500);
-            }
-        }
-    }*/ }
-  main .zonas__container {
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 1.5rem; }
+main .zonas__container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 1.5rem; }
 
 .accordion__icon {
   width: 123px;
   height: 123px; }
+
+.accordion-button {
+  color: #184e77;
+  background-color: #edf5e1;
+  font-weight: 700; }
+  .accordion-button:not(.collapsed) {
+    color: #184e77;
+    background-color: #edf5e1; }
+
+.accordion-item {
+  background-color: #edf5e1; }
 
 /**********Main de Contacto y Presupuestos*********/
 main div h2 {

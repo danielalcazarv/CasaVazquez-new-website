@@ -113,51 +113,24 @@ main{
         width: 100%;
         margin: 0 auto;
         padding-bottom: 1.5rem;
-    }/*
-    .zonas__container{
-        background-color: $color-box;
-        display: flex;
-        flex-direction: row;
-        max-width: 300px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: $color-blue;
-        margin: 0 auto;
-        margin-bottom: 1.5rem;
-        .zonas__container--caba{
-            display: flex;
-            width: 50%;
-            flex-direction: column;
-            ul{
-                li{
-                    @include text-format(justify,$color-green,0.9rem,400);
-                    list-style: none;
-                }
-            }
-            h3{
-                @include text-format(center,$color-green,1rem,500);
-            }
-        }
-        .zonas__container--gba{
-            display: flex;
-            width: 50%;
-            flex-direction: column;
-            ul{
-                li{
-                    @include text-format(justify,$color-red,0.9rem,400);
-                    list-style: none;
-                }
-            }
-            h3{
-                @include text-format(center,$color-red,1rem,500);
-            }
-        }
-    }*/
+    }
 }
 
 .accordion__icon{
     width: 123px;
     height: 123px;
+}
+.accordion-button{
+    color: $color-blue;
+    background-color: $color-back-card;
+    font-weight:700;
+    &:not(.collapsed){
+        color: $color-blue;
+        background-color: $color-back-card;
+    }
+}
+.accordion-item{
+    background-color: $color-back-card;
 }
 
 /**********Main de Contacto y Presupuestos*********/
