@@ -141,6 +141,15 @@ body {
 /********MAIN CONTENT*******/
 /***************************/
 /**********Main del Index**********/
+main .alerta__urgencias {
+  color: white;
+  font-size: .92rem;
+  background-color: #FF2442;
+  border-color: #FF2442; }
+  main .alerta__urgencias .alerta__urgencias--link {
+    color: white;
+    text-decoration: none; }
+
 main section div div .cardIcon {
   width: 54px;
   height: 54px; }
@@ -156,15 +165,6 @@ main section div div div p {
   color: #184e77;
   font-size: 1rem;
   font-weight: 400; }
-
-.alert-danger {
-  color: white;
-  font-size: .92rem;
-  background-color: #FF2442;
-  border-color: #FF2442; }
-  .alert-danger .alert-link {
-    color: white;
-    text-decoration: none; }
 
 /**********Main de Servicios*********/
 main div div div .card__servicios {

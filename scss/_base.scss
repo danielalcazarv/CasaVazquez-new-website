@@ -46,6 +46,16 @@ body{
 
 /**********Main del Index**********/
 main{
+    .alerta__urgencias{
+        color:$color-white;
+        font-size: .92rem;
+        background-color: $color-back-alert;
+        border-color: $color-back-alert;
+        .alerta__urgencias--link{
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
     section{
         div{
             div{
@@ -66,16 +76,7 @@ main{
     }
 }
 
-.alert-danger{
-    color:$color-white;
-    font-size: .92rem;
-    background-color: $color-back-alert;
-    border-color: $color-back-alert;
-    .alert-link{
-        color: $color-white;
-        text-decoration: none;
-    }
-}
+
 
 
 
