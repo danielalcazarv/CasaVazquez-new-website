@@ -64,39 +64,24 @@ input[type=number] {
 /***************************/
 @media screen and (min-width: 480px) and (max-width: 600px) {
   /****mapas****/
-  body main {
-    /*
-            .mapa{
-            max-width: 420px;
-            }*/ }
-    body main .zonas__container {
-      max-width: 420px; }
+  body main .zonas__container {
+    max-width: 420px; }
   /****formularios****/
   main div fieldset .formulario {
     padding: 20px; } }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
   /****mapas****/
-  body main {
-    /*
-            .mapa{
-            max-width: 520px;
-            }*/ }
-    body main .zonas__container {
-      max-width: 520px; }
+  body main .zonas__container {
+    max-width: 520px; }
   /****formularios****/
   main div fieldset .formulario {
     padding: 30px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /****mapas****/
-  body main {
-    /*
-            .mapa{
-            max-width: 700px;
-            }*/ }
-    body main .zonas__container {
-      max-width: 700px; }
+  body main .zonas__container {
+    max-width: 700px; }
   /****formularios****/
   main div fieldset .formulario {
     width: 70%;
@@ -104,13 +89,8 @@ input[type=number] {
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   /****mapas****/
-  body main {
-    /*
-            .mapa{
-            max-width: 800px;
-            }*/ }
-    body main .zonas__container {
-      max-width: 800px; }
+  body main .zonas__container {
+    max-width: 800px; }
   /****formularios****/
   main div fieldset .formulario {
     width: 65%;
@@ -118,13 +98,8 @@ input[type=number] {
 
 @media screen and (min-width: 1200px) {
   /****mapas****/
-  body main {
-    /*
-            #mapa{
-            max-width: 900px;
-            }*/ }
-    body main .zonas__container {
-      max-width: 900px; }
+  body main .zonas__container {
+    max-width: 900px; }
   /****formularios****/
   main div fieldset .formulario {
     width: 55%;
