@@ -128,9 +128,9 @@ body {
 /***********HEADER**********/
 /***************************/
 /**********Menu de Navegacion**********/
-#nav__link--color {
+.navbar-light .navbar-nav .nav-link {
   color: #184e77; }
-  #nav__link--color:hover {
+  .navbar-light .navbar-nav .nav-link:hover {
     color: #168aad; }
 
 /***************************/
@@ -146,7 +146,7 @@ main .alerta__urgencias {
     color: white;
     text-decoration: none; }
 
-main section div div .cardIcon {
+main section div div .card__icon {
   width: 54px;
   height: 54px; }
 
@@ -182,7 +182,7 @@ main section .text__nosotros {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  padding: 0.5rem; }
+  padding: 2rem 0.5rem 0.5rem 0.5rem; }
 
 /**********Main de Zonas*********/
 main .zonas__container {

@@ -28,10 +28,14 @@ body{
 /***************************/
 
 /**********Menu de Navegacion**********/
-#nav__link--color{
-    color: $color-blue;
-    &:hover{
-        color: $color-light-blue;
+.navbar-light{
+    .navbar-nav{
+        .nav-link{
+            color: $color-blue;
+            &:hover{
+                color: $color-light-blue;
+            }
+        }
     }
 }
 
@@ -54,7 +58,7 @@ main{
     section{
         div{
             div{
-                .cardIcon{
+                .card__icon{
                         width: 54px;
                         height: 54px;
                     }
@@ -103,7 +107,7 @@ main{
         .text__nosotros{
             @include text-format(justify, $color-blue, 1rem, 400);
             line-height: 1.5rem;
-            padding: 0.5rem;
+            padding: 2rem 0.5rem 0.5rem 0.5rem;
         }
     }
 }
