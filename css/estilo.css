@@ -3,7 +3,6 @@
 /***********IMPORTS***********/
 /*****************************/
 /**********Backgrounds color**********/
-/**********Backgrounds img**********/
 /**********Fonts**********/
 /********Boton Form*******/
 /***************************/
@@ -125,9 +124,6 @@ input[type=number] {
 body {
   background-color: #8ee4af; }
 
-.background__texture {
-  background-image: url(../imagenes/backg-asfalt-dark.png); }
-
 /***************************/
 /***********HEADER**********/
 /***************************/
@@ -247,16 +243,21 @@ footer {
   font-size: .95rem; }
   footer h5 {
     font-size: .95rem; }
-  footer ul li .footLink {
+  footer ul li .footer__link {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s; }
-    footer ul li .footLink:hover {
+    footer ul li .footer__link:hover {
       color: #184e77; }
   footer div div div a {
     text-decoration: none; }
-    footer div div div a .footerLogos {
-      width: 28px;
-      height: 28px; }
+    footer div div div a .footer__logos {
+      color: black;
+      text-decoration: none;
+      margin: 0.25rem; }
+      footer div div div a .footer__logos:hover {
+        color: #184e77; }
+  footer div div div form div .btn-custom2:hover {
+    background-color: #184e77; }
   footer div div p {
     font-size: 0.75rem; }
