@@ -113,7 +113,7 @@ input[type=number] {
   box-sizing: border-box;
   font-family: 'Inter', sans-serif; }
 
-.container-layout {
+.container__layout {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto; }
@@ -261,3 +261,9 @@ footer {
     background-color: #184e77; }
   footer div div p {
     font-size: 0.75rem; }
+  footer .footer__line {
+    background: #405672;
+    background: linear-gradient(360deg, #405672 25%, #69a550 25%, #69a550 49%, #bdd468 50%, #c0d369 50%, #c0d369 75%, #e0bb4d 76%);
+    background: -moz-linear-gradient(360deg, #405672 25%, #69a550 25%, #69a550 49%, #bdd468 50%, #c0d369 50%, #c0d369 75%, #e0bb4d 76%);
+    background: -webkit-linear-gradient(360deg, #405672 25%, #69a550 25%, #69a550 49%, #bdd468 50%, #c0d369 50%, #c0d369 75%, #e0bb4d 76%);
+    padding: 2px; }
