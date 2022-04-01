@@ -37,6 +37,7 @@ main{
                 .btnColor{
                     color: white;
                     background-color: $color-blue;
+                    margin-top: 1rem;
                     &:hover{
                         background-color: $color-light-blue;
                     }
@@ -47,6 +48,11 @@ main{
             }
         }
     }
+}
+
+/*login*/
+.form-login{
+    max-width: 600px;
 }
 
 /*Ocultar flechas Input Number*/

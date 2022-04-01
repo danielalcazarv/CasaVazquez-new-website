@@ -43,11 +43,16 @@ main div fieldset {
       box-shadow: 0 1px 1px #0000004d; }
     main div fieldset .formulario .btnColor {
       color: white;
-      background-color: #184e77; }
+      background-color: #184e77;
+      margin-top: 1rem; }
       main div fieldset .formulario .btnColor:hover {
         background-color: #168aad; }
       main div fieldset .formulario .btnColor:active {
         background-color: #caffbf; }
+
+/*login*/
+.form-login {
+  max-width: 600px; }
 
 /*Ocultar flechas Input Number*/
 input[type=number]::-webkit-inner-spin-button,
