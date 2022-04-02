@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "user":32993545,
+        "nombre":"Pablo Maslowski",
+        "email":"pmaslowski@casavazquez.com.ar",
+        "pass":"1212"
+    },
+    {
+        "id":2,
+        "user":93923465,
+        "nombre":"Daniel Alcázar",
+        "email":"dalcazar@casavazquez.com.ar",
+        "pass":"3434"
+    },
+    {
+        "id":2,
+        "user":93923465,
+        "nombre":"David Martinez",
+        "email":"",
+        "pass":"5656"
+    }
+]
