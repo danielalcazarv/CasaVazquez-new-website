@@ -53,5 +53,4 @@ const mostrarSaludo = () => {
     const contenido = document.querySelector('.saludo');
     contenido.innerHTML = "Hola "+ objIngresado +"!";
 }
-
 mostrarSaludo();
