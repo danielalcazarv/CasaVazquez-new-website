@@ -20,7 +20,7 @@ const validar = (usuario) => {
         const datoIngresadoLS = (clave, valor) => { localStorage.setItem(clave,valor)};
         datoIngresadoLS("datosAlmacenados", JSON.stringify(userNameLogged));
     }else{
-        alert("Usuario Incorrecto");
+        alert("Usuario y/o Contraseña Incorrecto");
     }
 }
 
@@ -42,15 +42,4 @@ function validarLogin (e){
     validarUserJson();
 }
 
-if (miLogin){
-    miLogin.addEventListener("submit", validarLogin);
-}
-
-//************Presupuestador****************
-const mostrarSaludo = () => {
-    const objIngresado = JSON.parse(localStorage.getItem("datosAlmacenados"));
-    console.log(objIngresado);
-    const contenido = document.querySelector('.saludo');
-    contenido.innerHTML = "Hola "+ objIngresado +"!";
-}
-mostrarSaludo();
+miLogin && miLogin.addEventListener("submit", validarLogin);
