@@ -75,27 +75,55 @@
                 <b>También podes comunicarte con nuestros operadores al <a href="tel:1125958968">15 2595 8968</a></b>
             </p>
         </div>
-        <div>
-            <fieldset>
-                    <form class="form formulario" action="" method="get">
-                        <label for="nombrecliente">Nombre y apellido (obligatorio)</label>
-                            <input class="field" type="text" name="nombrecliente" placeholder="Ingrese su nombre" id="nombrecliente">
-                        <label for="mailcliente">E-mail (obligatorio)</label>
-                            <input class="field" type="email" name="mailcliente" placeholder="nombre@ejemplo.com" id="mailcliente">
-                        <label for="telcliente">Teléfono (obligatorio)</label>
-                            <input class="field" type="number" name="telcliente"  placeholder="Ingrese su número" id="telcliente">
-                        <label for="trabajocliente">Tipo de Trabajo</label>
-                            <ul> 
-                                <li>Plomería <input class="field" type="checkbox" name="trabajocliente" id="trabajocliente"></li>
-                                <li>Gas <input class="field" type="checkbox" name="trabajocliente" id="trabajocliente"></li>
-                                <li>Limpieza de Tanques <input class="field" type="checkbox" name="trabajocliente" id="trabajocliente"></li>
-                                <li>Bombas <input class="field" type="checkbox" name="trabajocliente" id="trabajocliente"></li>
-                            </ul>
-                        <label for="descripcliente">Descripción del Trabajo</label>
-                            <textarea class="field" name="descripcliente" id="descripcliente" cols="40" rows="10"></textarea>
-                        <input type="submit" class=" field btn btnColor" value="Enviar">
-                    </form>
-            </fieldset>
+        <div class="container__layout formulario m-auto p-3">
+            <form class="row g-3" id="formulario">
+                <div class="col-md-12">
+                    <label for="nombreCliente" class="form-label label-title" id="label-custom">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="nombreCliente">
+                </div>
+                <div class="col-md-6">
+                    <label for="mailCliente" class="form-label label-title">Correo Electrónico</label>
+                    <input type="email" placeholder="ejemplo@mail.com" class="form-control" id="mailCliente">
+                </div>
+                <div class="col-md-6">
+                    <label for="telCliente" class="form-label label-title">Teléfono </label>
+                    <input type="number" placeholder="Codigo área sin 0 + Número sin 15" class="form-control" id="telCliente">
+                </div>
+                <div class="col-12">
+                    <p> <b>Seleccione Tipo de Trabajo:</b></p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="plomeria" type="checkbox" id="plomeria">
+                        <label class="form-check-label" for="plomeria">Plomería</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="gas" type="checkbox" id="gas">
+                        <label class="form-check-label" for="gas">Gas</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="tanques" type="checkbox" id="tanques">
+                        <label class="form-check-label" for="tanques">Limpieza de Tanques</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="bombas" type="checkbox" id="bombas">
+                        <label class="form-check-label" for="bombas">Bombas</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="destapacion" type="checkbox" id="destapacion">
+                        <label class="form-check-label" for="destapacion">Destapaciones</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="piscina" type="checkbox" id="piscina">
+                        <label class="form-check-label" for="piscina">Piscinas</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <label for="textoCliente" class="form-label label-title">Descripción del Trabajo</label>
+                    <textarea class="form-control" maxlength="500" name="textoCliente" placeholder="Ingrese sus comentarios (máx 500 caracteres)" id="textoCliente" rows="3"></textarea>
+                </div>
+                <div class="col-12 d-grid gap-2">
+                    <button type="submit" id="btn" class="field btn btnColor">Enviar</button>
+                </div>
+            </form>
         </div>
     </main>
     <!--Footer-->
@@ -157,5 +185,7 @@
     <script>
         AOS.init();
     </script>
+    <!--js-->
+    <script src="../js/main.js"></script>
 </body>
 </html>

@@ -16,39 +16,29 @@
 /********FORMULARIOS********/
 /***************************/
 /*********Form y Boton**********/
-main div fieldset {
-  border: 0; }
-  main div fieldset .formulario {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    color: #184e77; }
-    main div fieldset .formulario label {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      text-align: left;
-      font-weight: bold; }
-    main div fieldset .formulario ul {
-      text-align: justify;
-      line-height: 25px;
-      padding-left: 0;
-      list-style: none; }
-    main div fieldset .formulario .btn {
-      border-radius: 3px;
-      display: inline-block;
-      padding: 20px 15px;
-      text-decoration: none;
-      text-shadow: 0 1px #ffffff4d;
-      box-shadow: 0 1px 1px #0000004d; }
-    main div fieldset .formulario .btnColor {
-      color: white;
-      background-color: #184e77;
-      margin-top: 1rem; }
-      main div fieldset .formulario .btnColor:hover {
-        background-color: #168aad; }
-      main div fieldset .formulario .btnColor:active {
-        background-color: #caffbf; }
+main div form div .label-title {
+  font-weight: bold; }
+
+main div form div label {
+  color: #184e77; }
+
+main div form div .btn {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-shadow: 0 1px #ffffff4d;
+  box-shadow: 0 1px 1px #0000004d; }
+
+main div form div .btnColor {
+  color: white;
+  background-color: #184e77;
+  margin-top: 1rem; }
+  main div form div .btnColor:hover {
+    background-color: #168aad;
+    color: white; }
+  main div form div .btnColor:active {
+    background-color: #caffbf; }
 
 /*Ocultar flechas Input Number*/
 input[type=number]::-webkit-inner-spin-button,
@@ -58,52 +48,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield; }
-
-/***************************/
-/*******MEDIAQUERIES********/
-/***************************/
-@media screen and (min-width: 480px) and (max-width: 600px) {
-  /****mapas****/
-  body main .zonas__container {
-    max-width: 420px; }
-  /****formularios****/
-  main div fieldset .formulario {
-    padding: 20px; } }
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
-  /****mapas****/
-  body main .zonas__container {
-    max-width: 520px; }
-  /****formularios****/
-  main div fieldset .formulario {
-    padding: 30px; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  /****mapas****/
-  body main .zonas__container {
-    max-width: 700px; }
-  /****formularios****/
-  main div fieldset .formulario {
-    width: 70%;
-    padding: 30px; } }
-
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
-  /****mapas****/
-  body main .zonas__container {
-    max-width: 800px; }
-  /****formularios****/
-  main div fieldset .formulario {
-    width: 65%;
-    padding: 30px; } }
-
-@media screen and (min-width: 1200px) {
-  /****mapas****/
-  body main .zonas__container {
-    max-width: 900px; }
-  /****formularios****/
-  main div fieldset .formulario {
-    width: 55%;
-    padding: 30px; } }
 
 /***************************/
 /**********RESETS**********/

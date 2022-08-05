@@ -6,25 +6,13 @@
 /*********Form y Boton**********/
 main{
     div{
-        fieldset{
-            border:0;
-            .formulario{
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                padding: 15px;
-                color: $color-blue;
-                label{
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    text-align: left;
+        form{
+            div{
+                .label-title{
                     font-weight: bold;
                 }
-                ul{
-                    text-align: justify;
-                    line-height: 25px;
-                    padding-left: 0;
-                    list-style: none;
+                label{
+                    color: $color-blue;
                 }
                 .btn{
                     border-radius: 3px;
@@ -40,6 +28,7 @@ main{
                     margin-top: 1rem;
                     &:hover{
                         background-color: $color-light-blue;
+                        color: white;
                     }
                     &:active{
                         background-color: $color-light-green;
@@ -59,115 +48,4 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
-}
-
-/***************************/
-/*******MEDIAQUERIES********/
-/***************************/
-@media screen and (min-width: 480px) and (max-width:600px){
-    /****mapas****/
-    body{
-        main{
-            .zonas__container{
-                max-width: 420px;
-            }
-        }
-    }
-    /****formularios****/
-    main{
-        div{
-            fieldset{
-                .formulario{
-                    padding: 20px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width:768px){
-    /****mapas****/
-    body{
-        main{
-            .zonas__container{
-                max-width: 520px;
-            }
-        }
-    }
-    /****formularios****/
-    main{
-        div{
-            fieldset{
-                .formulario{
-                    padding: 30px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width:1024px){
-    /****mapas****/
-    body{
-        main{
-            .zonas__container{
-                max-width: 700px;
-            }
-        }
-    }
-    /****formularios****/
-    main{
-        div{
-            fieldset{
-                .formulario{
-                    width: 70%;
-                    padding: 30px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width:1200px){
-    /****mapas****/
-    body{
-        main{
-            .zonas__container{
-                max-width: 800px;
-            }
-        }
-    }
-    /****formularios****/
-    main{
-        div{
-            fieldset{
-                .formulario{
-                    width: 65%;
-                    padding: 30px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1200px){
-    /****mapas****/
-    body{
-        main{
-            .zonas__container{
-                max-width: 900px;
-            }
-        }
-    }
-    /****formularios****/
-    main{
-        div{
-            fieldset{
-                .formulario{
-                    width: 55%;
-                    padding: 30px;
-                }
-            }
-        }
-    }
 }
