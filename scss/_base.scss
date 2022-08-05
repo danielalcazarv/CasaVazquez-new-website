@@ -210,14 +210,14 @@ footer{
                             color: $color-blue;
                         }
                     }
+                    .footer__logos--afip{
+                        max-width: 22px;
+                        max-height: 22px;
+                    }
                 }
-                form{
-                    div{
-                        .btn-custom2{
-                            &:hover{
-                                background-color: $color-blue;
-                            }
-                        }
+                .btn-custom2{
+                    &:hover{
+                        background-color: $color-blue;
                     }
                 }
             }

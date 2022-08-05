@@ -50,10 +50,6 @@ main div fieldset {
       main div fieldset .formulario .btnColor:active {
         background-color: #caffbf; }
 
-/*login*/
-.form-login {
-  max-width: 600px; }
-
 /*Ocultar flechas Input Number*/
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -262,7 +258,10 @@ footer {
       margin: 0.25rem; }
       footer div div div a .footer__logos:hover {
         color: #184e77; }
-  footer div div div form div .btn-custom2:hover {
+    footer div div div a .footer__logos--afip {
+      max-width: 22px;
+      max-height: 22px; }
+  footer div div div .btn-custom2:hover {
     background-color: #184e77; }
   footer div div p {
     font-size: 0.75rem; }
