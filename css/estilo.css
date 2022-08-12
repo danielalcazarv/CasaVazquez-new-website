@@ -184,6 +184,10 @@ main div p {
   .btn-custom:active {
     background-color: #caffbf; }
 
+/**********Main de 404*********/
+.big-face {
+  font-size: 30vh; }
+
 /***************************/
 /***********FOOTER**********/
 /***************************/

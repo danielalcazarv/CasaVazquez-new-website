@@ -6,8 +6,6 @@ const telCliente = document.getElementById('telCliente');
 const trabajoCliente = document.getElementById('trabajoCliente')
 const textoCliente = document.getElementById('textoCliente');
 
-
-
 //Funciones
 function validarDatos (){
     if (nombreCliente.value==""||
@@ -19,8 +17,7 @@ function validarDatos (){
     }else{
         exito();
     }
-}
-
+};
 
 function validarFormulario(e){
     e.preventDefault();
@@ -41,7 +38,6 @@ function exito(){
         button: "LISTO",
     });
 };
-
 function error(){
     swal({
         title: "Algo salió mal :(",
@@ -66,17 +62,5 @@ function error(){
         }, false)
     })
 })()
-
-
-
-
-/*
-console.log(nombreCliente.value)
-console.log(mailCliente.value)
-console.log(telCliente.value)
-trabajosCheck()
-console.log(checkboxes[0].value)
-console.log(trabajosCheck())
-*/
 
 
