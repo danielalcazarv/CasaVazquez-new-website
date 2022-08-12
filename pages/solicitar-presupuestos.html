@@ -75,6 +75,7 @@
                 <b>También podes comunicarte con nuestros operadores al <a href="tel:1125958968">15 2595 8968</a></b>
             </p>
         </div>
+        <!--Formulario-->
         <div class="container__layout formulario m-auto p-3">
             <form class="row g-3" id="formulario">
                 <div class="col-md-12">
@@ -86,39 +87,39 @@
                     <input type="email" placeholder="ejemplo@mail.com" class="form-control" id="mailCliente">
                 </div>
                 <div class="col-md-6">
-                    <label for="telCliente" class="form-label label-title">Teléfono </label>
+                    <label for="telCliente" class="form-label label-title">Teléfono Celular</label>
                     <input type="number" placeholder="Codigo área sin 0 + Número sin 15" class="form-control" id="telCliente">
                 </div>
                 <div class="col-12">
                     <p> <b>Seleccione Tipo de Trabajo:</b></p>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="plomeria" type="checkbox" id="plomeria">
+                        <input class="form-check-input" name="plomeria" type="checkbox" value="Plomeria">
                         <label class="form-check-label" for="plomeria">Plomería</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="gas" type="checkbox" id="gas">
+                        <input class="form-check-input" name="gas" type="checkbox" value="Gas">
                         <label class="form-check-label" for="gas">Gas</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="tanques" type="checkbox" id="tanques">
+                        <input class="form-check-input" name="tanques" type="checkbox" value="Tanques">
                         <label class="form-check-label" for="tanques">Limpieza de Tanques</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="bombas" type="checkbox" id="bombas">
+                        <input class="form-check-input" name="bombas" type="checkbox" value="Bombas">
                         <label class="form-check-label" for="bombas">Bombas</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="destapacion" type="checkbox" id="destapacion">
+                        <input class="form-check-input" name="destapacion" type="checkbox" value="Destapacion">
                         <label class="form-check-label" for="destapacion">Destapaciones</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="piscina" type="checkbox" id="piscina">
+                        <input class="form-check-input" name="piscina" type="checkbox" value="Piscina">
                         <label class="form-check-label" for="piscina">Piscinas</label>
                     </div>
                 </div>
                 <div class="col-12">
                     <label for="textoCliente" class="form-label label-title">Descripción del Trabajo</label>
-                    <textarea class="form-control" maxlength="500" name="textoCliente" placeholder="Ingrese sus comentarios (máx 500 caracteres)" id="textoCliente" rows="3"></textarea>
+                    <textarea class="form-control" maxlength="500" name="textoCliente" placeholder="Detalle su solicitud (máx. 500 caracteres)" id="textoCliente" rows="3"></textarea>
                 </div>
                 <div class="col-12 d-grid gap-2">
                     <button type="submit" id="btn" class="field btn btnColor">Enviar</button>
@@ -185,6 +186,8 @@
     <script>
         AOS.init();
     </script>
+    <!--SweetAlert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--js-->
     <script src="../js/main.js"></script>
 </body>

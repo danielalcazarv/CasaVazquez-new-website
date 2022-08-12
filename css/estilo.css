@@ -40,6 +40,10 @@ main div form div .btnColor {
   main div form div .btnColor:active {
     background-color: #caffbf; }
 
+.form-check-input:checked {
+  background-color: #184e77;
+  border-color: #184e77; }
+
 /*Ocultar flechas Input Number*/
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -215,3 +219,25 @@ footer {
     background: -moz-linear-gradient(360deg, #405672 25%, #69a550 25%, #69a550 49%, #bdd468 50%, #c0d369 50%, #c0d369 75%, #e0bb4d 76%);
     background: -webkit-linear-gradient(360deg, #405672 25%, #69a550 25%, #69a550 49%, #bdd468 50%, #c0d369 50%, #c0d369 75%, #e0bb4d 76%);
     padding: 2px; }
+
+.swal-overlay {
+  background-color: #8ee4af73; }
+
+.swal-title {
+  color: #184e77;
+  font-family: 'Inter', sans-serif; }
+
+.swal-text {
+  color: #184e77;
+  font-family: 'Inter', sans-serif; }
+
+.swal-button {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background-color: #184e77;
+  margin-top: 1rem; }
+  .swal-button:hover {
+    background-color: #168aad;
+    color: white; }
+  .swal-button:active {
+    background-color: #caffbf; }

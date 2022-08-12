@@ -39,6 +39,11 @@ main{
     }
 }
 
+.form-check-input:checked {
+    background-color: $color-blue;
+    border-color: $color-blue;
+}
+
 /*Ocultar flechas Input Number*/
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 

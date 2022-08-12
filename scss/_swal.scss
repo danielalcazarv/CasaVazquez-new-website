@@ -1,0 +1,25 @@
+.swal-overlay {
+    background-color: $color-back-swal;
+}
+
+.swal-title {
+    color: $color-blue;
+    font-family: 'Inter', sans-serif;
+}
+.swal-text{
+    color: $color-blue;
+    font-family: 'Inter', sans-serif;
+}
+.swal-button{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: $color-blue;
+    margin-top: 1rem;
+    &:hover{
+        background-color: $color-light-blue;
+        color: white;
+    }
+    &:active{
+        background-color: $color-light-green;
+    }
+}
