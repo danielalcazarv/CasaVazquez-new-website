@@ -77,49 +77,39 @@
         </div>
         <!--Formulario-->
         <div class="container__layout formulario m-auto p-3">
-            <form class="row g-3" id="formulario">
+            <form class="row g-3 needs-validation" novalidate id="formulario">
                 <div class="col-md-12">
                     <label for="nombreCliente" class="form-label label-title" id="label-custom">Nombre y Apellido</label>
-                    <input type="text" class="form-control" id="nombreCliente">
+                    <input type="text" class="form-control" id="nombreCliente" required>
+                    <div class="invalid-feedback">Ingrese su nombre.</div>
                 </div>
                 <div class="col-md-6">
                     <label for="mailCliente" class="form-label label-title">Correo Electrónico</label>
-                    <input type="email" placeholder="ejemplo@mail.com" class="form-control" id="mailCliente">
+                    <input type="email" placeholder="ejemplo@mail.com" class="form-control" id="mailCliente" required>
+                    <div class="invalid-feedback">Ingrese un correo válido.</div>
                 </div>
                 <div class="col-md-6">
                     <label for="telCliente" class="form-label label-title">Teléfono Celular</label>
-                    <input type="number" placeholder="Codigo área sin 0 + Número sin 15" class="form-control" id="telCliente">
+                    <input type="number" placeholder="Codigo área sin 0 + Número sin 15" class="form-control" id="telCliente" required>
+                    <div class="invalid-feedback">Ingrese su teléfono.</div>
                 </div>
-                <div class="col-12">
+                <div class="col-md-6">
                     <p> <b>Seleccione Tipo de Trabajo:</b></p>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="plomeria" type="checkbox" value="Plomeria">
-                        <label class="form-check-label" for="plomeria">Plomería</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="gas" type="checkbox" value="Gas">
-                        <label class="form-check-label" for="gas">Gas</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="tanques" type="checkbox" value="Tanques">
-                        <label class="form-check-label" for="tanques">Limpieza de Tanques</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="bombas" type="checkbox" value="Bombas">
-                        <label class="form-check-label" for="bombas">Bombas</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="destapacion" type="checkbox" value="Destapacion">
-                        <label class="form-check-label" for="destapacion">Destapaciones</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="piscina" type="checkbox" value="Piscina">
-                        <label class="form-check-label" for="piscina">Piscinas</label>
-                    </div>
+                    <select name="trabajos" id="trabajoCliente" class="form-select" required>
+                        <option selected disabled value="">Elija...</option>
+                        <option value="Plomeria">Plomería</option>
+                        <option value="Gas">Gas</option>
+                        <option value="Tanques">Limpieza de Tanques</option>
+                        <option value="Bombas">Bombas</option>
+                        <option value="Destapacion">Destapaciones</option>
+                        <option value="Piscina">Piscinas</option>
+                    </select>
+                    <div class="invalid-feedback">Seleccione un trabajo.</div>
                 </div>
                 <div class="col-12">
                     <label for="textoCliente" class="form-label label-title">Descripción del Trabajo</label>
-                    <textarea class="form-control" maxlength="500" name="textoCliente" placeholder="Detalle su solicitud (máx. 500 caracteres)" id="textoCliente" rows="3"></textarea>
+                    <textarea class="form-control" maxlength="500" name="textoCliente" placeholder="Detalle su solicitud (máx. 500 caracteres)" id="textoCliente" rows="3" required></textarea>
+                    <div class="invalid-feedback">Ingrese una descripción breve.</div>
                 </div>
                 <div class="col-12 d-grid gap-2">
                     <button type="submit" id="btn" class="field btn btnColor">Enviar</button>

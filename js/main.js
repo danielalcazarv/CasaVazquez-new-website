@@ -3,28 +3,34 @@ const miFormulario = document.getElementById('formulario');
 const nombreCliente = document.getElementById('nombreCliente');
 const mailCliente = document.getElementById('mailCliente');
 const telCliente = document.getElementById('telCliente');
-const checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+const trabajoCliente = document.getElementById('trabajoCliente')
+const textoCliente = document.getElementById('textoCliente');
 
-const trabajosCheck = () => {
-    const seleccionArr = [];
-    for ( let i = 0; i< checkboxes.length; i++){
-        seleccionArr.push(checkboxes[i].value)
-    };
-    const seleccion = seleccionArr.toString();
-    return seleccion;
-    
-}
 
 
 //Funciones
-
+function validarDatos (){
+    if (nombreCliente.value==""||
+        mailCliente.value==""||
+        telCliente.value==""||
+        trabajoCliente.value==""||
+        textoCliente.value==""){
+            error();
+    }else{
+        exito();
+    }
+}
 
 
 function validarFormulario(e){
     e.preventDefault();
-
-    console.log("enviaste el formulario")
+    validarDatos();
+    
 };
+
+//Eventos
+miFormulario.addEventListener("submit", validarFormulario);
+
 
 //Swal
 function exito(){
@@ -36,9 +42,31 @@ function exito(){
     });
 };
 
+function error(){
+    swal({
+        title: "Algo salió mal :(",
+        text: "Revisa los datos que cargaste y prueba nuevamente.",
+        icon: "error",
+        button: "REINTENTAR",
+    });
+};
 
-//Eventos
-miFormulario.addEventListener("submit", validarFormulario);
+//Bootstrap form validation
+(function () {
+    'use strict'
+    var forms = document.querySelectorAll('.needs-validation')
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+        }, false)
+    })
+})()
+
 
 
 
