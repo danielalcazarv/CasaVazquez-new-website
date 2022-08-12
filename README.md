@@ -10,10 +10,10 @@ Agregue fuentes de Google fonts.<br>
 Librerías utilizadas:
   - michalsnik.github.io/aos/
   - animate.style
-  - Bootstrap Icons
-Incorporé Javascript para el formulario de presupuestos.<br>
-  -Use el validador de formularios de Bootstrap.
-  -SweetAlert.
+  - Bootstrap Icons<br>
+Incorporé Javascript para el formulario de presupuestos:
+  - Use el validador de formularios de Bootstrap.
+  - SweetAlert.
  
 ## En Línea! 🚀
 Actualmente esta subida al servidor, alojada en un subdominio de la página actual de la empresa. La puedes encontrar en https://webnueva.casavazquez.com.ar/  
