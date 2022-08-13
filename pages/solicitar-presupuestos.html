@@ -77,25 +77,32 @@
         </div>
         <!--Formulario-->
         <div class="container__layout formulario m-auto p-3">
-            <form class="row g-3 needs-validation" novalidate id="formulario">
+            <form 
+                class="row g-3 needs-validation" 
+                novalidate 
+                id="formulario" 
+                method="POST" 
+                action="send" 
+                enctype="multipart/form-data"
+            >
                 <div class="col-md-12">
                     <label for="nombreCliente" class="form-label label-title" id="label-custom">Nombre y Apellido</label>
-                    <input type="text" class="form-control" id="nombreCliente" required>
+                    <input type="text" class="form-control" name="nombreCliente" id="nombreCliente" required>
                     <div class="invalid-feedback">Ingrese su nombre.</div>
                 </div>
                 <div class="col-md-6">
                     <label for="mailCliente" class="form-label label-title">Correo Electrónico</label>
-                    <input type="email" placeholder="ejemplo@mail.com" class="form-control" id="mailCliente" required>
+                    <input type="email" placeholder="ejemplo@mail.com" class="form-control" name="mailCliente" id="mailCliente" required>
                     <div class="invalid-feedback">Ingrese un correo válido.</div>
                 </div>
                 <div class="col-md-6">
                     <label for="telCliente" class="form-label label-title">Teléfono Celular</label>
-                    <input type="number" placeholder="Codigo área sin 0 + Número sin 15" class="form-control" id="telCliente" required>
+                    <input type="number" placeholder="Codigo área sin 0 + Número sin 15" class="form-control" name="telCliente" id="telCliente" required>
                     <div class="invalid-feedback">Ingrese su teléfono.</div>
                 </div>
                 <div class="col-md-6">
                     <p> <b>Seleccione Tipo de Trabajo:</b></p>
-                    <select name="trabajos" id="trabajoCliente" class="form-select" required>
+                    <select name="trabajoCliente" id="trabajoCliente" class="form-select" required>
                         <option selected disabled value="">Elija...</option>
                         <option value="Plomeria">Plomería</option>
                         <option value="Gas">Gas</option>

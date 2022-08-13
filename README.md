@@ -10,7 +10,7 @@ Agregue fuentes de Google fonts.<br>
 Librerías utilizadas:
   - michalsnik.github.io/aos/
   - animate.style
-  - Bootstrap Icons<br>
+  - Bootstrap Icons
 Incorporé Javascript para el formulario de presupuestos:
   - Use el validador de formularios de Bootstrap.
   - SweetAlert.

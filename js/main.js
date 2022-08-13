@@ -1,3 +1,4 @@
+/*
 //Variables
 const miFormulario = document.getElementById('formulario');
 const nombreCliente = document.getElementById('nombreCliente');
@@ -27,6 +28,8 @@ function validarFormulario(e){
 
 //Eventos
 miFormulario.addEventListener("submit", validarFormulario);
+
+*/
 
 
 //Swal
