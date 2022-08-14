@@ -4,6 +4,7 @@ _Este es el sitio web que fui creando, a lo largo de la cursada de Desarrollo We
 Buenos Aires, Argentina._
 
 ## Vamos con los detalles! 📦
+### Estructura y estilo
 Para la creación de esta página utilice HTML para las páginas y CSS para darle estilo a cada una.<br>
 Utilice elementos e íconos de Bootstrap.<br>
 Agregue fuentes de Google fonts.<br>
@@ -11,6 +12,7 @@ Librerías utilizadas:
   - michalsnik.github.io/aos/
   - animate.style
   - Bootstrap Icons
+### Formulario
 Incorporé Javascript para el formulario de presupuestos:
   - Use el validador de formularios de Bootstrap.
   - SweetAlert.
