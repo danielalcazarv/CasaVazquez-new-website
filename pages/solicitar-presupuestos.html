@@ -78,13 +78,7 @@
         <!--Formulario-->
         <div class="container__layout formulario m-auto p-3">
             <form 
-                class="row g-3 needs-validation" 
-                novalidate 
-                id="formulario" 
-                method="POST" 
-                action="send" 
-                enctype="multipart/form-data"
-            >
+                class="row g-3 needs-validation" novalidate id="formulario">
                 <div class="col-md-12">
                     <label for="nombreCliente" class="form-label label-title" id="label-custom">Nombre y Apellido</label>
                     <input type="text" class="form-control" name="nombreCliente" id="nombreCliente" required>
@@ -185,6 +179,9 @@
     </script>
     <!--SweetAlert-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--emailjs-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="../js/emailjs.js"></script>
     <!--js-->
     <script src="../js/main.js"></script>
 </body>

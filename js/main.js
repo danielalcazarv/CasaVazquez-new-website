@@ -1,4 +1,3 @@
-/*
 //Variables
 const miFormulario = document.getElementById('formulario');
 const nombreCliente = document.getElementById('nombreCliente');
@@ -8,7 +7,7 @@ const trabajoCliente = document.getElementById('trabajoCliente')
 const textoCliente = document.getElementById('textoCliente');
 
 //Funciones
-function validarDatos (){
+function validarDatos(){
     if (nombreCliente.value==""||
         mailCliente.value==""||
         telCliente.value==""||
@@ -16,21 +15,17 @@ function validarDatos (){
         textoCliente.value==""){
             error();
     }else{
-        exito();
+        sendMail(trabajoCliente.value,mailCliente.value,nombreCliente.value,telCliente.value,textoCliente.value);
     }
 };
 
 function validarFormulario(e){
     e.preventDefault();
     validarDatos();
-    
 };
 
 //Eventos
 miFormulario.addEventListener("submit", validarFormulario);
-
-*/
-
 
 //Swal
 function exito(){
@@ -49,6 +44,14 @@ function error(){
         button: "REINTENTAR",
     });
 };
+function errorMail(err){
+    swal({
+        title: "Algo salió mal :(",
+        text: "Intenta nuevamente. Si persiste comunicate con nuestros operadores. Error: "+err,
+        icon: "error",
+        button: "REINTENTAR",
+    });
+}
 
 //Bootstrap form validation
 (function () {
@@ -67,3 +70,18 @@ function error(){
 })()
 
 
+//emailjs
+function sendMail(trabajo,email,name,phone,msg){
+    emailjs.send("service_7ir31t1","template_ayef1mm",{
+        subject: trabajo,
+        email: email,
+        name: name,
+        phone:phone,
+        message: msg,
+        }).then(function(response) {
+            exito();
+            miFormulario.reset();
+        }, function(error){
+            errorMail(error.message);
+        });
+}
