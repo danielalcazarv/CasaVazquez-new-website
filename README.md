@@ -15,6 +15,7 @@ Librerías utilizadas:
 ### Formulario
 Incorporé Javascript para el formulario de presupuestos:
   - Use el validador de formularios de Bootstrap.
+  - Conectado con EmailJS para enviar los pedidos.
   - SweetAlert.
  
 ## En Línea! 🚀

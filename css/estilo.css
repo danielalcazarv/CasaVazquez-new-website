@@ -214,6 +214,8 @@ footer {
       max-width: 22px;
       max-height: 22px; }
   footer div div div .btn-custom2:hover {
+    color: whitesmoke;
+    border-color: #184e77;
     background-color: #184e77; }
   footer div div p {
     font-size: 0.75rem; }

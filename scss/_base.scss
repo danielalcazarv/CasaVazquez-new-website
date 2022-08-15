@@ -222,6 +222,8 @@ footer{
                 }
                 .btn-custom2{
                     &:hover{
+                        color: whitesmoke;
+                        border-color: $color-blue;
                         background-color: $color-blue;
                     }
                 }
