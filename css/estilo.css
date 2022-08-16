@@ -16,6 +16,7 @@
 /********FORMULARIOS********/
 /***************************/
 /*********Form y Boton**********/
+@import url(../node_modules/animate.css/animate.css);
 main div form div .label-title {
   font-weight: bold; }
 
