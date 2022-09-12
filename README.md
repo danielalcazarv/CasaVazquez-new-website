@@ -14,12 +14,12 @@ Librerías utilizadas:
   - Bootstrap Icons
 ### Formulario
 Incorporé Javascript para el formulario de presupuestos:
-  - Use el validador de formularios de Bootstrap.
+  - Utilizo el validador de formularios de Bootstrap.
   - Conectado con EmailJS para enviar los pedidos.
   - SweetAlert.
  
 ## En Línea! 🚀
-Actualmente esta subida al servidor, alojada en un subdominio de la página actual de la empresa. La puedes encontrar en https://webnueva.casavazquez.com.ar/  
+Actualmente en línea! La puedes encontrar en https://www.casavazquez.com.ar/  
 
 
 
