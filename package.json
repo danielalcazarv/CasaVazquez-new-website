@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/main.scss css/estilo.css",
+    "build-css": "sass scss/main.scss css/estilo.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "Daniel Alcazar",
   "license": "ISC",
   "dependencies": {
     "animate.css": "^4.1.1",
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.21",
+    "sass": "^1.58.3"
   }
 }

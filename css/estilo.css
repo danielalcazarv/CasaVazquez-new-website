@@ -9,6 +9,7 @@
 /**********EXTENDS**********/
 /***************************/
 /*****Tamaño contenido******/
+@import "../node_modules/animate.css/animate.css";
 /***************************/
 /**********MIXINS***********/
 /***************************/
@@ -16,43 +17,48 @@
 /********FORMULARIOS********/
 /***************************/
 /*********Form y Boton**********/
-@import url(../node_modules/animate.css/animate.css);
 main div form div .label-title {
-  font-weight: bold; }
-
+  font-weight: bold;
+}
 main div form div label {
-  color: #184e77; }
-
+  color: #184e77;
+}
 main div form div .btn {
   border-radius: 3px;
   display: inline-block;
   padding: 20px 15px;
   text-decoration: none;
-  text-shadow: 0 1px #ffffff4d;
-  box-shadow: 0 1px 1px #0000004d; }
-
+  text-shadow: 0 1px rgba(255, 255, 255, 0.3019607843);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3019607843);
+}
 main div form div .btnColor {
   color: white;
   background-color: #184e77;
-  margin-top: 1rem; }
-  main div form div .btnColor:hover {
-    background-color: #168aad;
-    color: white; }
-  main div form div .btnColor:active {
-    background-color: #caffbf; }
+  margin-top: 1rem;
+}
+main div form div .btnColor:hover {
+  background-color: #168aad;
+  color: white;
+}
+main div form div .btnColor:active {
+  background-color: #caffbf;
+}
 
 .form-check-input:checked {
   background-color: #184e77;
-  border-color: #184e77; }
+  border-color: #184e77;
+}
 
 /*Ocultar flechas Input Number*/
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  margin: 0; }
+  margin: 0;
+}
 
 input[type=number] {
-  -moz-appearance: textfield; }
+  -moz-appearance: textfield;
+}
 
 /***************************/
 /**********RESETS**********/
@@ -61,27 +67,32 @@ input[type=number] {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif; }
+  font-family: "Inter", sans-serif;
+}
 
 .container__layout {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 /***************************/
 /********BACKGROUNDS********/
 /***************************/
 body {
-  background-color: #8ee4af; }
+  background-color: #8ee4af;
+}
 
 /***************************/
 /***********HEADER**********/
 /***************************/
 /**********Menu de Navegacion**********/
 .navbar-light .navbar-nav .nav-link {
-  color: #184e77; }
-  .navbar-light .navbar-nav .nav-link:hover {
-    color: #168aad; }
+  color: #184e77;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #168aad;
+}
 
 /***************************/
 /********MAIN CONTENT*******/
@@ -89,162 +100,219 @@ body {
 /**********Main del Index**********/
 main .alerta__urgencias {
   color: white;
-  font-size: .92rem;
   background-color: #FF2442;
-  border-color: #FF2442; }
-  main .alerta__urgencias .alerta__urgencias--link {
-    color: white;
-    text-decoration: none; }
-
+  border-color: #FF2442;
+}
+main .alerta__urgencias h1 {
+  text-align: center;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+}
+main .alerta__urgencias h1 .alerta__urgencias--link {
+  color: white;
+  text-decoration: none;
+}
+main h1 {
+  text-align: center;
+  color: #184e77;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+main h2 {
+  text-align: center;
+  color: #184e77;
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+}
 main section div div .card__icon {
   width: 54px;
-  height: 54px; }
-
-main section div div div h5 {
+  height: 54px;
+}
+main section div div div h3 {
   text-align: center;
   color: #184e77;
   font-size: 1.25rem;
-  font-weight: bold; }
-
+  font-weight: bold;
+}
 main section div div div p {
   text-align: justify;
   color: #184e77;
   font-size: 1rem;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 /**********Main de Servicios*********/
 main div div div .card__servicios {
-  background-color: #edf5e1; }
-  main div div div .card__servicios h5 {
-    color: #184e77; }
-  main div div div .card__servicios p {
-    color: #184e77;
-    font-size: 0.9rem; }
+  background-color: #edf5e1;
+}
+main div div div .card__servicios h5 {
+  color: #184e77;
+}
+main div div div .card__servicios p {
+  color: #184e77;
+  font-size: 0.9rem;
+}
 
 /**********Main de Quienes Somos*********/
 main div .img__inst {
   padding-top: 1.5rem;
-  width: 100%; }
-
+  width: 100%;
+}
 main section .text__nosotros {
   text-align: justify;
   color: #184e77;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  padding: 2rem 0.5rem 0.5rem 0.5rem; }
+  padding: 2rem 0.5rem 0.5rem 0.5rem;
+}
 
 /**********Main de Zonas*********/
 main .zonas__container {
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 1.5rem; }
+  padding-bottom: 1.5rem;
+}
 
 .accordion__icon {
   width: 123px;
-  height: 123px; }
+  height: 123px;
+}
 
 .accordion-button {
   color: #184e77;
   background-color: #edf5e1;
-  font-weight: 700; }
-  .accordion-button:not(.collapsed) {
-    color: #184e77;
-    background-color: #edf5e1; }
+  font-weight: 700;
+}
+.accordion-button:not(.collapsed) {
+  color: #184e77;
+  background-color: #edf5e1;
+}
 
 .accordion-item {
-  background-color: #edf5e1; }
+  background-color: #edf5e1;
+}
 
 /**********Main de Contacto y Presupuestos*********/
 main div h2 {
   text-align: center;
   color: #184e77;
   font-size: 2rem;
-  font-weight: inherit; }
-
+  font-weight: inherit;
+}
 main div h5 {
-  color: #184e77; }
-
+  color: #184e77;
+}
 main div p {
-  color: #184e77; }
-  main div p a {
-    text-decoration: none;
-    color: #184e77; }
-    main div p a:hover {
-      color: #168aad; }
+  color: #184e77;
+}
+main div p a {
+  text-decoration: none;
+  color: #184e77;
+}
+main div p a:hover {
+  color: #168aad;
+}
 
 .btn-custom {
   background-color: #184e77;
   border-color: #184e77;
-  color: white; }
-  .btn-custom:hover {
-    background-color: #168aad;
-    color: white;
-    border-color: #168aad; }
-  .btn-custom:active {
-    background-color: #caffbf; }
+  color: white;
+}
+.btn-custom:hover {
+  background-color: #168aad;
+  color: white;
+  border-color: #168aad;
+}
+.btn-custom:active {
+  background-color: #caffbf;
+}
 
 /**********Main de 404*********/
 .big-face {
-  font-size: 30vh; }
+  font-size: 30vh;
+}
 
 /***************************/
 /***********FOOTER**********/
 /***************************/
 footer {
   background-color: #379683;
-  font-size: .95rem; }
-  footer h5 {
-    font-size: .95rem; }
-  footer ul li .footer__link {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s; }
-    footer ul li .footer__link:hover {
-      color: #184e77; }
-  footer div div div a {
-    text-decoration: none; }
-    footer div div div a .footer__logos {
-      color: black;
-      text-decoration: none;
-      margin: 0.25rem; }
-      footer div div div a .footer__logos:hover {
-        color: #184e77; }
-    footer div div div a .footer__logos--afip {
-      max-width: 22px;
-      max-height: 22px; }
-  footer div div div .btn-custom2:hover {
-    color: whitesmoke;
-    border-color: #184e77;
-    background-color: #184e77; }
-  footer div div p {
-    font-size: 0.75rem; }
-  footer .footer__line {
-    background: #405672;
-    background: linear-gradient(360deg, #405672 25%, #69a550 25%, #69a550 49%, #bdd468 50%, #c0d369 50%, #c0d369 75%, #e0bb4d 76%);
-    background: -moz-linear-gradient(360deg, #405672 25%, #69a550 25%, #69a550 49%, #bdd468 50%, #c0d369 50%, #c0d369 75%, #e0bb4d 76%);
-    background: -webkit-linear-gradient(360deg, #405672 25%, #69a550 25%, #69a550 49%, #bdd468 50%, #c0d369 50%, #c0d369 75%, #e0bb4d 76%);
-    padding: 2px; }
+  font-size: 0.95rem;
+}
+footer p {
+  font-size: 0.95rem;
+}
+footer ul li .footer__link {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+footer ul li .footer__link:hover {
+  color: #184e77;
+}
+footer div div div a {
+  text-decoration: none;
+}
+footer div div div a .footer__logos {
+  color: black;
+  text-decoration: none;
+  margin: 0.25rem;
+}
+footer div div div a .footer__logos:hover {
+  color: #184e77;
+}
+footer div div div a .footer__logos--afip {
+  max-width: 22px;
+  max-height: 22px;
+}
+footer div div div .btn-custom2:hover {
+  color: whitesmoke;
+  border-color: #184e77;
+  background-color: #184e77;
+}
+footer div div .copy {
+  font-size: 0.75rem;
+}
+footer .footer__line {
+  background: hsl(214, 28%, 35%);
+  background: linear-gradient(360deg, hsl(214, 28%, 35%) 25%, hsl(102, 35%, 48%) 25%, hsl(102, 35%, 48%) 49%, hsl(73, 56%, 62%) 50%, hsl(71, 55%, 62%) 50%, hsl(71, 55%, 62%) 75%, hsl(45, 70%, 59%) 76%);
+  background: -moz-linear-gradient(360deg, hsl(214, 28%, 35%) 25%, hsl(102, 35%, 48%) 25%, hsl(102, 35%, 48%) 49%, hsl(73, 56%, 62%) 50%, hsl(71, 55%, 62%) 50%, hsl(71, 55%, 62%) 75%, hsl(45, 70%, 59%) 76%);
+  background: -webkit-linear-gradient(360deg, hsl(214, 28%, 35%) 25%, hsl(102, 35%, 48%) 25%, hsl(102, 35%, 48%) 49%, hsl(73, 56%, 62%) 50%, hsl(71, 55%, 62%) 50%, hsl(71, 55%, 62%) 75%, hsl(45, 70%, 59%) 76%);
+  padding: 2px;
+}
 
 .swal-overlay {
-  background-color: #8ee4af73; }
+  background-color: rgba(142, 228, 175, 0.4509803922);
+}
 
 .swal-title {
   color: #184e77;
-  font-family: 'Inter', sans-serif; }
+  font-family: "Inter", sans-serif;
+}
 
 .swal-text {
   color: #184e77;
-  font-family: 'Inter', sans-serif; }
+  font-family: "Inter", sans-serif;
+}
 
 .swal-button {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: white;
   background-color: #184e77;
-  margin-top: 1rem; }
-  .swal-button:hover {
-    background-color: #168aad;
-    color: white; }
-  .swal-button:active {
-    background-color: #caffbf; }
+  margin-top: 1rem;
+}
+.swal-button:hover {
+  background-color: #168aad;
+  color: white;
+}
+.swal-button:active {
+  background-color: #caffbf;
+}
+
+/*# sourceMappingURL=estilo.css.map */

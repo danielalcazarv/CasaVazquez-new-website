@@ -47,13 +47,24 @@ body{
 main{
     .alerta__urgencias{
         color:$color-white;
-        font-size: .92rem;
         background-color: $color-back-alert;
         border-color: $color-back-alert;
-        .alerta__urgencias--link{
-            color: $color-white;
-            text-decoration: none;
+        h1{
+            @include text-format(center,$color-white,1.25rem,bold);
+            margin: 0;
+            .alerta__urgencias--link{
+                color: $color-white;
+                text-decoration: none;
+            }
         }
+    }
+    h1{
+        @include text-format(center,$color-blue,2.25rem,bold);
+        text-align: center;
+    }
+    h2{
+        @include text-format(center,$color-blue,1.75rem,bold);
+        text-align: center;
     }
     section{
         div{
@@ -63,7 +74,7 @@ main{
                         height: 54px;
                     }
                 div{
-                    h5{
+                    h3{
                         @include text-format(center,$color-blue,1.25rem,bold);
                     }
                     p{
@@ -187,7 +198,7 @@ main{
 footer{
     background-color: $color-back-footer;
     font-size: .95rem;
-    h5{
+    p{
     font-size: .95rem;
     }
     ul{
@@ -230,7 +241,7 @@ footer{
             }
         }
         div{
-            p{
+            .copy{
                     font-size: 0.75rem;
             }
         }
