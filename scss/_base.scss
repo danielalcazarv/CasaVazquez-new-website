@@ -114,11 +114,12 @@ main{
             width: 100%;
         }
     }
-    section{
+    .about-us-section{
+        max-width: 1200px;
         .text__nosotros{
             @include text-format(justify, $color-blue, 1rem, 400);
             line-height: 1.5rem;
-            padding: 2rem 0.5rem 0.5rem 0.5rem;
+            padding: 1rem 0.5rem 0.5rem 0.5rem;
         }
     }
 }
@@ -187,8 +188,15 @@ main{
 }
 
 /**********Main de 404*********/
-.big-face{
-    font-size: 30vh;
+main {
+    div {
+        .text-not-found {
+            font-size: 2vh;
+        }
+        .sad-face{
+            font-size: 40vh;
+        }
+    }
 }
 
 /***************************/

@@ -162,13 +162,16 @@ main div .img__inst {
   padding-top: 1.5rem;
   width: 100%;
 }
-main section .text__nosotros {
+main .about-us-section {
+  max-width: 1200px;
+}
+main .about-us-section .text__nosotros {
   text-align: justify;
   color: #184e77;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  padding: 2rem 0.5rem 0.5rem 0.5rem;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
 }
 
 /**********Main de Zonas*********/
@@ -234,8 +237,11 @@ main div p a:hover {
 }
 
 /**********Main de 404*********/
-.big-face {
-  font-size: 30vh;
+main div .text-not-found {
+  font-size: 2vh;
+}
+main div .sad-face {
+  font-size: 40vh;
 }
 
 /***************************/
